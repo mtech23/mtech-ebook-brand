@@ -1,13 +1,66 @@
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "PTSans";
+  src: url("./asserts/fonts/PTSans-Regular.ttf");
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'poppinsRegular';
+  src: url('./asserts/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'poppinsLight';
+  src: url('./asserts/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: 'poppinsMedium';
+  src: url('./asserts/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'poppinsbold';
+  src: url('./asserts/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'poppinsSemibold';
+  src: url('./asserts/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'poppinsExtrabold';
+  src: url('./asserts/fonts/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'khandRegular';
+  src: url('./asserts/fonts/Khand-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'khandBold';
+  src: url('./asserts/fonts/Khand-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'khandMedium';
+  src: url('./asserts/fonts/Khand-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Jomolhari';
+  src: url('./asserts/fonts/Jomolhari-Regular.ttf');
 }
