@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
-import { heroImgLeft, heroImgRight, phoneImg, questionImg, leatherImg} from '../../asserts/images';
+import { heroImgLeft, heroImgRight, phoneImg, questionImg, leatherImg, brilliantBookImg, boxBelowImg} from '../../asserts/images';
 import "./style.css";
 import { Link } from 'react-router-dom';
 
@@ -93,7 +93,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="col-md-4">
+                <div className="col-md-4 align-self-center">
                   <div className='hero_centered_main'>
 
                     <div className='hero_centered_content'>
@@ -128,6 +128,46 @@ const Home = () => {
             </div>
         </div>
       </section>
+
+      <section class="brilliant_mind_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <div >
+                        <h2>BRILLIANT MINDS PUBLISH HERE</h2>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        </p>
+
+                        <p>
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem. 
+                        </p>
+
+                        <p>
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem. 
+                        </p>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div>
+                        <div class="text-center book_img">
+                            <img src={brilliantBookImg} className="img-fluid" alt=""></img>
+                        </div>
+
+                        <div>
+                            <img src={boxBelowImg} class="img-fluid" alt=""></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </>
   )
 }

@@ -89,7 +89,7 @@
 }
 
 .hero_centered_content{
-    border: 2px solid #ED0742;
+    border: 5px solid #ED0742;
     width: 350px;
     margin: 0 auto;
     position: relative;
@@ -109,6 +109,9 @@
 .content_with_border{
     padding: 40px 25px;
     /* position: relative; */
+    border-top: 2px solid #ED0742;
+    border-bottom: 2px solid #ED0742;
+    margin: 6px;
 }
 
 .brand_name_title{
@@ -124,6 +127,8 @@
     text-align: center;
     word-spacing: 0px;
     padding-top: 20px;
+    position: relative;
+    z-index: 20;
 }
 
 .avail_discount_text{
@@ -132,6 +137,23 @@
     font-size: 18px;
 }
 
-  
+.brilliant_mind_section{
+    margin-top: -310px;
+    position: relative;
+    z-index: 10;
+    padding: 500px 0px;
+    /* background-color: rgb(111, 145, 175); */
+    background-image: url("../../asserts/images/bk.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+        /* -webkit-mask-image: url("./second-shape.png"); */
+        /* mask-image: url("./second-shape.png"); */
+        /* -webkit-mask-repeat: no-repeat; */
+        /* mask-repeat: no-repeat;     */
+}
+
+.book_img img{
+    width: 70%;
+}
 
 /* HERO SECTION CSS END */
