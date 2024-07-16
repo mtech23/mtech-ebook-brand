@@ -1,11 +1,8 @@
 import React from 'react';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-import { heroImgLeft, heroImgRight, phoneImg, questionImg, leatherImg, brilliantBookImg, boxBelowImg} from '../../asserts/images';
+import { heroImgLeft, heroImgRight, phoneImg, questionImg, leatherImg, brilliantBookImg, boxBelowImg, polygon01, semi01, semi02, semi03, redCirclewithSemi, redSemibehindBook, siteScrollImg, helpingIcon01, helpingIcon02, helpingIcon03, helpingIcon04, helpingIcon05, Imgundercircle, bannerImg01, ImgUnderArc, A4book, categoryIcon01, categoryIcon02, categoryIcon03 ,categoryIcon04, categoryIcon05, categorybk, processImg01, processImg02, processImg03, processImg04, secondBannerImg01}  from '../../asserts/images';
 import "./style.css";
 import { Link } from 'react-router-dom';
 
@@ -130,9 +127,18 @@ const Home = () => {
       </section>
 
       <section class="brilliant_mind_section">
-        <div class="container">
+
+      <div className='polygonImg01'>
+        <img src={polygon01} alt='polygon'></img>
+      </div>
+
+      <div className='polygonImg02'>
+        <img src={polygon01} alt='polygon'></img>
+      </div>
+
+        <div className="container">
             <div class="row">
-                <div class="col-md-6 align-self-center">
+                <div class="col-md-6">
                     <div >
                         <h2>BRILLIANT MINDS PUBLISH HERE</h2>
 
@@ -155,9 +161,39 @@ const Home = () => {
                 </div>
 
                 <div class="col-md-6">
-                    <div>
-                        <div class="text-center book_img">
+                    <div className='book_main_box'>
+
+                        <div className='book_semicircle_box'>
+                          <div className='first_semi'>
+                            <img src={semi01} alt='semi'></img>
+                          </div>
+
+                          <div className='second_semi'>
+                            <img src={semi02} alt='semi'></img>
+                          </div>
+
+                          <div className='third_semi'>
+                            <img src={semi03} alt='semi'></img>
+                          </div>
+
+                          <div className='circle_with_semi'>
+                            <img src={redCirclewithSemi} alt='semi'></img>
+                          </div>
+
+                          <div className='circle_with_semi2'>
+                            <img src={redCirclewithSemi} alt='semi'></img>
+                          </div>
+
+                        
+
+                        </div>
+
+                        <div class="text-center book_img position-relative">
                             <img src={brilliantBookImg} className="img-fluid" alt=""></img>
+
+                            <div className='redCircleBehindBook'>
+                              <img src={redSemibehindBook} alt='red'></img>
+                          </div>
                         </div>
 
                         <div>
@@ -167,7 +203,394 @@ const Home = () => {
                 </div>
             </div>
         </div>
+
+        <div className='container-fluid p-0'>
+          <div>
+            <div class="marquee-container trusted-partnerContainer">
+            <div class="marquee">
+              <div class="trustedPartners">
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+                <div class="trustedPartner ">
+                  <img src={siteScrollImg} alt=""></img>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          </div>
+        </div>
     </section>
+
+    <section className='helping_things_section'>
+      <div className='container-fluid'>
+        <div className='row'>
+
+          <div className='col-md-6'>
+            <div className='helping_left_part'>
+            <div id="parent-circle">
+              <div className='duolingo_Under_img'>
+                <img src={Imgundercircle} alt='thtye'></img>
+              </div>
+
+              <div class="circle blue">
+                <img src={helpingIcon01} alt='helpingIcon' className='duolingo_tab_img'></img>
+                <h6 className='duolingo_tab_title'>Book Publishing</h6>
+              </div>
+              <div class="circle pink">
+                <img src={helpingIcon02} alt='helpingIcon' className='duolingo_tab_img'></img>
+                <h6 className='duolingo_tab_title'>Ghost Writing</h6>
+              </div>
+              <div class="circle lime">
+                <img src={helpingIcon03} alt='helpingIcon' className='duolingo_tab_img'></img>
+                <h6 className='duolingo_tab_title'>Book Editing</h6>
+              </div>
+              <div class="circle orange" >
+                <img src={helpingIcon04} alt='helpingIcon' className='duolingo_tab_img'></img>
+                <h6 className='duolingo_tab_title'>Ebook Writing</h6>
+              </div>
+              <div class="circle teal">
+                <img src={helpingIcon05} alt='helpingIcon' className='duolingo_tab_img'></img>
+                <h6 className='duolingo_tab_title'>Lorem Ipsum</h6>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <div className='col-md-6'>
+            <div className='main_helping_content'>
+            <h2>
+              Things We Can Help You With
+            </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section className='first_banner_section'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-md-7 align-self-center'>
+              <div className='first_banner_left_part'>
+                <h1>Lorem Ipsum Is A dummy Text</h1>
+
+                <p>
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem. 
+                </p>
+              </div>
+          </div>
+
+          <div className='col-md-5'>
+            <div className='first_banner_right_part'>
+              <div>
+                <img src={bannerImg01} className='img-fluid' alt='bnner'></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section className='category_section'>
+
+      <div className='category_bk'>
+        <img src={categorybk} alt='bk'></img>
+      </div>
+
+      <div className='container'>
+        <div className='row'>
+          <div className='col-md-12'>
+            <div>
+              <h1>Categories We Cater for Authors</h1>
+            </div>
+
+          </div>
+
+          <div className='col-md-7 ml-auto'>
+            <div className='category_circle'>
+              <div className='arc'>
+
+                <div className='first_category'>
+                  <div className='first_category_detail'>
+                    <span className='category_details'></span>
+                    <span className='category_detail_icon'><img src={categoryIcon01} alt='cate'></img></span>
+                    <span className='category_detail_desc'>
+                      <h6 class="category_detail_title m-0">Fiction</h6>
+                      <p className='category_detail_para m-0'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </span>
+                  </div>
+                </div>
+
+                <div className='second_category'>
+                <div className='first_category_detail'>
+                    <span className='category_details'></span>
+                    <span className='category_detail_icon'><img src={categoryIcon02} alt='cate'></img></span>
+                    <span className='category_detail_desc'>
+                      <h6 class="category_detail_title m-0">Children</h6>
+                      <p className='category_detail_para m-0'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </span>
+                  </div>
+                  </div>
+
+                  <div className='third_category'>
+                  <div className='first_category_detail'>
+                    <span className='category_details'></span>
+                    <span className='category_detail_icon'><img src={categoryIcon03} alt='cate'></img></span>
+                    <span className='category_detail_desc'>
+                      <h6 class="category_detail_title m-0">Comic</h6>
+                      <p className='category_detail_para m-0'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </span>
+                  </div>
+                  </div>
+
+                  <div className='forth_category'>
+                  <div className='first_category_detail'>
+                    <span className='category_details'></span>
+                    <span className='category_detail_icon'><img src={categoryIcon04} alt='cate'></img></span>
+                    <span className='category_detail_desc'>
+                      <h6 class="category_detail_title m-0">Action</h6>
+                      <p className='category_detail_para m-0'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </span>
+                  </div>
+                  </div>
+
+                  <div className='fifth_category'>
+                  <div className='first_category_detail'>
+                    <span className='category_details'></span>
+                    <span className='category_detail_icon'><img src={categoryIcon05} alt='cate'></img></span>
+                    <span className='category_detail_desc'>
+                      <h6 class="category_detail_title m-0">Romance</h6>
+                      <p className='category_detail_para m-0'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </span>
+                  </div>
+                  </div>
+
+                <div className='imgUnderArc'>
+                  <img src={ImgUnderArc} alt='underArc'></img>
+                  <img src={A4book} alt='a4' className='A4book'></img>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process_sec">
+      {/* <div className='process_feather'>
+        <img src={processFeather} alt='feather'></img>
+      </div> */}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sec_title">
+              <h2>
+                The Process For <br />
+                <span class="color-red">Ebooks</span> We
+                <span class="color-red">Follow</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row process_rows">
+          <div class="col-md-5">
+            <div class="process_content">
+              <h4 class="process_step">Step 1</h4>
+              <h3 class="process_content_title">Crafting the Details</h3>
+              <p>
+                when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="process_img">
+              <img
+               src={processImg01}
+                class="img-fluid"
+                alt="Crafting the Details"
+              />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="process_counter">
+              <h1>01</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row process_rows">
+          <div class="col-md-5">
+            <div class="process_content">
+              <h4 class="process_step">Step 2</h4>
+              <h3 class="process_content_title">Publishing Your Masterpiece</h3>
+              <p>
+                when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="process_img">
+              <img
+                src={processImg02}
+                class="img-fluid"
+                alt="Crafting the Details"
+              />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="process_counter">
+              <h1>02</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row process_rows">
+          <div class="col-md-5">
+            <div class="process_content">
+              <h4 class="process_step">Step 3</h4>
+              <h3 class="process_content_title">Reaching Your Readers</h3>
+              <p>
+                when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="process_img">
+              <img
+                src={processImg03}
+                class="img-fluid"
+                alt="Crafting the Details"
+              />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="process_counter">
+              <h1>03</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row process_rows">
+          <div class="col-md-5">
+            <div class="process_content">
+              <h4 class="process_step">Step 4</h4>
+              <h3 class="process_content_title">Designing a Beautiful Book</h3>
+              <p>
+                when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="process_img">
+              <img
+                src={processImg04}
+                class="img-fluid"
+                alt="Crafting the Details"
+              />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="process_counter">
+              <h1>04</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className='second_banner_section'>
+
+        <div className='banner_left_img'>
+          <img src={secondBannerImg01}></img>
+        </div>
+
+      <div className='container'>
+          <div className='row'>
+            <div className='col-md-12'>
+              <div>
+                <h2>Lorem Ipsum Is A dummy Text</h2>
+                <p>
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem. 
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
     </>
   )
 }
