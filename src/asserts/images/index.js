@@ -36,6 +36,8 @@ import processImg03 from "./process-img-3.webp";
 import processImg04 from "./process-img-4.webp";
 import processFeather from "./feather.png";
 import secondBannerImg01 from "./banner2img.png";
+import getTouchBook from "./get-touch-book.webp";
+import btnBG from "./btn-bg.webp";
 
 
 export {
@@ -74,5 +76,7 @@ export {
     processImg03,
     processImg04,
     processFeather,
-    secondBannerImg01
+    secondBannerImg01,
+    getTouchBook,
+btnBG
 }
