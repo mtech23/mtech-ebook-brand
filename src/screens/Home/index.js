@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Accordion from "react-bootstrap/Accordion";
+import { Link } from "react-router-dom";
 import {
   heroImgLeft,
   heroImgRight,
@@ -40,20 +41,47 @@ import {
   secondBannerImg01,
   getTouchBook,
   processFeather,
+  helpingBook,
+  banner2imgRight,
+  publishBookImg,
+  publishBookBgPattern,
+  testimonialGroupImg,
+  testimonialQuote,
+  ratingStars,
+  publicationBook1,
+  publicationBook2,
+  instagramIcon,
+  facebookIcon,
+  youtubeIcon,
+  twitterIcon,
+  dmcaImg,
+  paymentImg,
+  footerBrandImgs,
+  polygon03,
+  chatIcon,
 } from "../../asserts/images";
 import "./style.css";
-import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="header_topbar">
         <div className="container">
-          <div className="col-md-4 ml-auto">
+          <div className="col-sm-12 col-lg-4 ml-auto">
             <div className="topbar_main_content">
               <div className="header_icon_with_info">
                 <Link className="header_topbar_icon">
-                  <img src={phoneImg} alt="phone" className="img-fluid"></img>
+                  <img
+                    draggable={false}
+                    src={phoneImg}
+                    alt="phone"
+                    className="img-fluid"
+                  ></img>
                 </Link>
                 <Link>
                   <span className="header_topbar_info">13322826702</span>
@@ -77,9 +105,10 @@ const Home = () => {
       </div>
 
       <section className="hero_section">
+
         <div className="container">
           <Navbar expand="lg" className="">
-            <Container>
+            <Container className="justify-content-end">
               {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
@@ -131,16 +160,34 @@ const Home = () => {
           </Navbar>
         </div>
 
-        <div className="container-fluid">
+        <div className="container-fluid position-relative">
+
+        <div className="hero_response_first_img">
+          <img src={heroImgLeft} alt="first"></img>
+        </div>
+
+        <div className="hero_response_second_img">
+          <img src={heroImgRight} alt="first"></img>
+        </div>
+
           <div className="row justify-content-between">
-            <div className="col-md-3">
-              <div>
-                <img src={heroImgLeft} className="img-fluid" alt=""></img>
+            <div className="col-lg-3 col-sm-0">
+              <div data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="1000">
+                <img
+                  draggable={false}
+                  src={heroImgLeft}
+                  className="img-fluid making_none"
+                  alt=""
+                ></img>
               </div>
             </div>
 
-            <div className="col-md-4 align-self-center">
-              <div className="hero_centered_main">
+            <div className="col-lg-4 col-sm-6 col-8 mx-auto align-self-center">
+              <div className="hero_centered_main" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="2000">
                 <div className="hero_centered_content">
                   <div className="content_with_border">
                     <h2 className="brand_name_title">Welcome To Brand Name</h2>
@@ -162,12 +209,29 @@ const Home = () => {
                     ></img>
                   </div>
                 </div>
+                <div className="hero_btns">
+                  <button className="btn_with_icon btn-red">
+                    {/* <img src={chatIcon} className="btn_with_icon_img" alt="" /> */}
+                    <span className="btn_with_icon_text">Get a Quote</span>
+                  </button>
+                  <button className="btn_with_icon">
+                    <img src={chatIcon} className="btn_with_icon_img" alt="" />
+                    <span className="btn_with_icon_text">Chat With us</span>
+                  </button>
+                </div>
               </div>
             </div>
 
-            <div className="col-md-3">
-              <div>
-                <img src={heroImgRight} className="img-fluid" alt=""></img>
+            <div className="col-lg-3 col-sm-0">
+              <div data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-duration="1000">
+                <img
+                  draggable={false}
+                  src={heroImgRight}
+                  className="img-fluid making_none"
+                  alt=""
+                ></img>
               </div>
             </div>
           </div>
@@ -176,26 +240,35 @@ const Home = () => {
 
       <section class="brilliant_mind_section">
         <div className="polygonImg01">
-          <img src={polygon01} alt="polygon"></img>
+          <img draggable={false} src={polygon01} alt="polygon"></img>
         </div>
 
         <div className="polygonImg02">
-          <img src={polygon01} alt="polygon"></img>
+          <img draggable={false} src={polygon01} alt="polygon"></img>
         </div>
 
         <div className="container">
           <div class="row">
-            <div class="col-md-6">
-              <div>
-                <h2>BRILLIANT MINDS PUBLISH HERE</h2>
-
-                <p>
+            <div class="col-sm-12 col-lg-6">
+              <div class="sec_title">
+                <h2  
+                className=""
+                data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="1000">
+                  BRILLIANT<span class="color-red">MINDS PUBLISH</span> HERE
+                </h2>
+                <p data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="2000">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s,
                 </p>
 
-                <p>
+                <p data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="2000">
                   when an unknown printer took a galley of type and scrambled it
                   to make a type specimen book. It has survived not only five
                   centuries, but also the leap into electronic typesetting,
@@ -203,7 +276,9 @@ const Home = () => {
                   1960s with the release of Letraset sheets containing Lorem.
                 </p>
 
-                <p>
+                <p data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="2000">
                   when an unknown printer took a galley of type and scrambled it
                   to make a type specimen book. It has survived not only five
                   centuries, but also the leap into electronic typesetting,
@@ -211,39 +286,56 @@ const Home = () => {
                   1960s with the release of Letraset sheets containing Lorem.
                 </p>
 
-                <p>
+                <p data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="2000">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s,
                 </p>
+                <button type="submit" class="brand_btn" data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="2000">
+                  Read More
+                </button>
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-sm-12 col-lg-6">
               <div className="book_main_box">
                 <div className="book_semicircle_box">
                   <div className="first_semi">
-                    <img src={semi01} alt="semi"></img>
+                    <img draggable={false} src={semi01} alt="semi"></img>
                   </div>
 
                   <div className="second_semi">
-                    <img src={semi02} alt="semi"></img>
+                    <img draggable={false} src={semi02} alt="semi"></img>
                   </div>
 
                   <div className="third_semi">
-                    <img src={semi03} alt="semi"></img>
+                    <img draggable={false} src={semi03} alt="semi"></img>
                   </div>
 
                   <div className="circle_with_semi">
-                    <img src={redCirclewithSemi} alt="semi"></img>
+                    <img
+                      draggable={false}
+                      src={redCirclewithSemi}
+                      alt="semi"
+                    ></img>
                   </div>
 
                   <div className="circle_with_semi2">
-                    <img src={redCirclewithSemi} alt="semi"></img>
+                    <img
+                      draggable={false}
+                      src={redCirclewithSemi}
+                      alt="semi"
+                    ></img>
                   </div>
                 </div>
 
-                <div class="text-center book_img position-relative">
+                <div class="text-center book_img position-relative" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000">
                   <img
                     src={brilliantBookImg}
                     className="img-fluid"
@@ -251,12 +343,21 @@ const Home = () => {
                   ></img>
 
                   <div className="redCircleBehindBook">
-                    <img src={redSemibehindBook} alt="red"></img>
+                    <img
+                      draggable={false}
+                      src={redSemibehindBook}
+                      alt="red"
+                    ></img>
                   </div>
                 </div>
 
                 <div>
-                  <img src={boxBelowImg} class="img-fluid" alt=""></img>
+                  <img
+                    draggable={false}
+                    src={boxBelowImg}
+                    class="img-fluid"
+                    alt=""
+                  ></img>
                 </div>
               </div>
             </div>
@@ -269,64 +370,64 @@ const Home = () => {
               <div class="marquee">
                 <div class="trustedPartners">
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                   <div class="trustedPartner ">
-                    <img src={siteScrollImg} alt=""></img>
+                    <img draggable={false} src={siteScrollImg} alt=""></img>
                   </div>
                 </div>
               </div>
@@ -337,12 +438,16 @@ const Home = () => {
 
       <section className="helping_things_section">
         <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-6">
+          <div className="row align-items-center">
+            <div className="col-sm-6 col-lg-6">
               <div className="helping_left_part">
                 <div id="parent-circle">
                   <div className="duolingo_Under_img">
-                    <img src={Imgundercircle} alt="thtye"></img>
+                    <img
+                      draggable={false}
+                      src={Imgundercircle}
+                      alt="thtye"
+                    ></img>
                   </div>
 
                   <div class="circle blue">
@@ -389,9 +494,52 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-sm-10 col-lg-6 mx-auto">
               <div className="main_helping_content">
-                <h2>Things We Can Help You With</h2>
+                <div className="sec_title">
+                  <h2 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000">
+                    Things We Can <br />
+                    <span class="color-red">Help</span>You With
+                  </h2>
+                  <div className="helping_tab">
+                    <div className="helping_tab_img" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="2000">
+                      <img draggable={false} src={helpingBook} alt="Book" />
+                    </div>
+                    <h3 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000">Book Editing</h3>
+                  </div>
+                  <p data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000"
+                className="helping_tab_para"
+                >
+                    when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem.
+                  </p>
+                  <p data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000"
+                className="helping_tab_para"
+                >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                  <button type="submit" class="brand_btn" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000">
+                    Get Started
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -400,24 +548,37 @@ const Home = () => {
 
       <section className="first_banner_section">
         <div className="container">
-          <div className="row">
-            <div className="col-md-7 align-self-center">
+          <div className="row align-items-end">
+            <div className="col-sm-12 col-lg-7">
               <div className="first_banner_left_part">
-                <h1>Lorem Ipsum Is A dummy Text</h1>
-
-                <p>
-                  when an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book. It has survived not only five
-                  centuries, but also the leap into electronic typesetting,
-                  remaining essentially unchanged. It was popularised in the
-                  1960s with the release of Letraset sheets containing Lorem.
-                </p>
+                <div className="sec_title">
+                  <h2 data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="1000">Lorem Ipsum Is A dummy Text</h2>
+                  <p data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="2000">
+                    when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem.
+                  </p>
+                  <button type="submit" class="brand_btn" data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="3000">
+                    Get Started
+                  </button>
+                </div>
               </div>
             </div>
 
-            <div className="col-md-5">
+            <div className="col-sm-8 col-lg-5 mx-auto">
               <div className="first_banner_right_part">
-                <div>
+                <div data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000">
                   <img
                     src={bannerImg01}
                     className="img-fluid"
@@ -431,27 +592,38 @@ const Home = () => {
       </section>
 
       <section className="category_section">
+      <div className="category_polygonImg01">
+          <img draggable={false} src={polygon01} alt="polygon"></img>
+        </div>
         <div className="category_bk">
-          <img src={categorybk} alt="bk"></img>
+          <img draggable={false} src={categorybk} alt="bk"></img>
         </div>
 
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div class="sec_title" bis_skin_checked="1">
-              <h2>
-              <span class="color-red">Categories</span> We Cater for<span class="color-red">Authors</span></h2>
+                <h2 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000">
+                  <span class="color-red">Categories</span> We Cater for
+                  <span class="color-red">Authors</span>
+                </h2>
               </div>
             </div>
 
-            <div className="col-md-7 ml-auto">
+            <div className="col-sm-12 col-lg-7 ml-auto">
               <div className="category_circle">
                 <div className="arc">
                   <div className="first_category">
                     <div className="first_category_detail">
                       <span className="category_details"></span>
                       <span className="category_detail_icon">
-                        <img src={categoryIcon01} alt="cate"></img>
+                        <img
+                          draggable={false}
+                          src={categoryIcon01}
+                          alt="cate"
+                        ></img>
                       </span>
                       <span className="category_detail_desc">
                         <h6 class="category_detail_title m-0">Fiction</h6>
@@ -467,7 +639,11 @@ const Home = () => {
                     <div className="first_category_detail">
                       <span className="category_details"></span>
                       <span className="category_detail_icon">
-                        <img src={categoryIcon02} alt="cate"></img>
+                        <img
+                          draggable={false}
+                          src={categoryIcon02}
+                          alt="cate"
+                        ></img>
                       </span>
                       <span className="category_detail_desc">
                         <h6 class="category_detail_title m-0">Children</h6>
@@ -483,7 +659,11 @@ const Home = () => {
                     <div className="first_category_detail">
                       <span className="category_details"></span>
                       <span className="category_detail_icon">
-                        <img src={categoryIcon03} alt="cate"></img>
+                        <img
+                          draggable={false}
+                          src={categoryIcon03}
+                          alt="cate"
+                        ></img>
                       </span>
                       <span className="category_detail_desc">
                         <h6 class="category_detail_title m-0">Comic</h6>
@@ -499,7 +679,11 @@ const Home = () => {
                     <div className="first_category_detail">
                       <span className="category_details"></span>
                       <span className="category_detail_icon">
-                        <img src={categoryIcon04} alt="cate"></img>
+                        <img
+                          draggable={false}
+                          src={categoryIcon04}
+                          alt="cate"
+                        ></img>
                       </span>
                       <span className="category_detail_desc">
                         <h6 class="category_detail_title m-0">Action</h6>
@@ -515,7 +699,11 @@ const Home = () => {
                     <div className="first_category_detail">
                       <span className="category_details"></span>
                       <span className="category_detail_icon">
-                        <img src={categoryIcon05} alt="cate"></img>
+                        <img
+                          draggable={false}
+                          src={categoryIcon05}
+                          alt="cate"
+                        ></img>
                       </span>
                       <span className="category_detail_desc">
                         <h6 class="category_detail_title m-0">Romance</h6>
@@ -528,10 +716,114 @@ const Home = () => {
                   </div>
 
                   <div className="imgUnderArc">
-                    <img src={ImgUnderArc} alt="underArc"></img>
-                    <img src={A4book} alt="a4" className="A4book"></img>
+                    <img
+                      draggable={false}
+                      src={ImgUnderArc}
+                      alt="underArc"
+                    ></img>
+                    <img
+                      draggable={false}
+                      src={A4book}
+                      alt="a4"
+                      className="A4book"
+                    ></img>
                   </div>
                 </div>
+              </div>
+
+              <div className="details_after_category">
+                  <div className="first_category_detail_below">
+                      {/* <span className="category_details"></span> */}
+                      <span className="category_detail_icon">
+                        <img
+                          draggable={false}
+                          src={categoryIcon01}
+                          alt="cate"
+                        ></img>
+                      </span>
+                      <span className="category_detail_desc_below">
+                        <h6 class="category_detail_title m-0">Fiction</h6>
+                        <p className="category_detail_para m-0">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.{" "}
+                        </p>
+                      </span>
+                    </div>
+
+
+                    <div className="first_category_detail_below">
+                      {/* <span className="category_details"></span> */}
+                      <span className="category_detail_icon">
+                        <img
+                          draggable={false}
+                          src={categoryIcon02}
+                          alt="cate"
+                        ></img>
+                      </span>
+                      <span className="category_detail_desc_below">
+                        <h6 class="category_detail_title m-0">Children</h6>
+                        <p className="category_detail_para m-0">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.{" "}
+                        </p>
+                      </span>
+                    </div>
+
+                    <div className="first_category_detail_below">
+                      {/* <span className="category_details"></span> */}
+                      <span className="category_detail_icon">
+                        <img
+                          draggable={false}
+                          src={categoryIcon03}
+                          alt="cate"
+                        ></img>
+                      </span>
+                      <span className="category_detail_desc_below">
+                        <h6 class="category_detail_title m-0">Comic</h6>
+                        <p className="category_detail_para m-0">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.{" "}
+                        </p>
+                      </span>
+                    </div>
+
+                    <div className="first_category_detail_below">
+                      {/* <span className="category_details"></span> */}
+                      <span className="category_detail_icon">
+                        <img
+                          draggable={false}
+                          src={categoryIcon04}
+                          alt="cate"
+                        ></img>
+                      </span>
+                      <span className="category_detail_desc_below">
+                        <h6 class="category_detail_title m-0">Action</h6>
+                        <p className="category_detail_para m-0">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.{" "}
+                        </p>
+                      </span>
+                    </div>
+
+                    <div className="first_category_detail_below">
+                      {/* <span className="category_details"></span> */}
+                      <span className="category_detail_icon">
+                        <img
+                          draggable={false}
+                          src={categoryIcon05}
+                          alt="cate"
+                        ></img>
+                      </span>
+                      <span className="category_detail_desc_below">
+                        <h6 class="category_detail_title m-0">Romance</h6>
+                        <p className="category_detail_para m-0">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.{" "}
+                        </p>
+                      </span>
+                    </div>
+
+
               </div>
             </div>
           </div>
@@ -539,13 +831,21 @@ const Home = () => {
       </section>
 
       <section class="process_sec">
-        <img src={processFeather} className="process_feather" alt='feather'></img>
       
+        <img
+          draggable={false}
+          src={processFeather}
+          className="process_feather"
+          alt="feather"
+        />
+
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="sec_title">
-                <h2>
+                <h2 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000">
                   The Process For <br />
                   <span class="color-red">Ebooks</span> We
                   <span class="color-red">Follow</span>
@@ -554,8 +854,10 @@ const Home = () => {
             </div>
           </div>
           <div class="row process_rows">
-            <div class="col-md-5">
-              <div class="process_content">
+            <div class="col-sm-10 col-lg-5 mx-auto">
+              <div class="process_content" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000">
                 <h4 class="process_step">Step 1</h4>
                 <h3 class="process_content_title">Crafting the Details</h3>
                 <p>
@@ -567,24 +869,31 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="process_img">
+            <div class="col-sm-6 col-lg-4 mx-auto">
+              <div class="process_img" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="2000">
                 <img
+                  draggable={false}
                   src={processImg01}
                   class="img-fluid"
                   alt="Crafting the Details"
                 />
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="process_counter">
+            <div class="col-sm-6 col-lg-3 mx-auto">
+              <div class="process_counter" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000">
                 <h1>01</h1>
               </div>
             </div>
           </div>
           <div class="row process_rows">
-            <div class="col-md-5">
-              <div class="process_content">
+            <div class="col-sm-10 col-lg-5 mx-auto">
+              <div class="process_content" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000">
                 <h4 class="process_step">Step 2</h4>
                 <h3 class="process_content_title">
                   Publishing Your Masterpiece
@@ -598,24 +907,31 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="process_img">
+            <div class="col-lg-4 col-sm-6 mx-auto">
+              <div class="process_img" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="2000">
                 <img
+                  draggable={false}
                   src={processImg02}
                   class="img-fluid"
                   alt="Crafting the Details"
                 />
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="process_counter">
+            <div class="col-lg-3 col-sm-6 mx-auto">
+              <div class="process_counter" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000">
                 <h1>02</h1>
               </div>
             </div>
           </div>
           <div class="row process_rows">
-            <div class="col-md-5">
-              <div class="process_content">
+            <div class="col-lg-5 col-sm-10 mx-auto">
+              <div class="process_content" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000">
                 <h4 class="process_step">Step 3</h4>
                 <h3 class="process_content_title">Reaching Your Readers</h3>
                 <p>
@@ -627,25 +943,32 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="process_img">
+            <div class="col-lg-4 col-sm-6 mx-auto">
+              <div class="process_img" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="2000">
                 <img
+                  draggable={false}
                   src={processImg03}
                   class="img-fluid"
                   alt="Crafting the Details"
                 />
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="process_counter">
+            <div class="col-lg-3 col-sm-6 mx-auto">
+              <div class="process_counter" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000">
                 <h1>03</h1>
               </div>
             </div>
           </div>
 
           <div class="row process_rows">
-            <div class="col-md-5">
-              <div class="process_content">
+            <div class="col-lg-5 col-sm-10 mx-auto">
+              <div class="process_content" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000">
                 <h4 class="process_step">Step 4</h4>
                 <h3 class="process_content_title">
                   Designing a Beautiful Book
@@ -659,17 +982,22 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="process_img">
+            <div class="col-lg-4 col-sm-6 mx-auto">
+              <div class="process_img" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="2000">
                 <img
+                  draggable={false}
                   src={processImg04}
                   class="img-fluid"
                   alt="Crafting the Details"
                 />
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="process_counter">
+            <div class="col-lg-3 col-sm-6 mx-auto">
+              <div class="process_counter" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000">
                 <h1>04</h1>
               </div>
             </div>
@@ -679,21 +1007,251 @@ const Home = () => {
 
       <section className="second_banner_section">
         <div className="banner_left_img">
-          <img src={secondBannerImg01}></img>
+          <img draggable={false} src={secondBannerImg01} alt="" />
         </div>
-
         <div className="container">
-          <div className="row">
+          <div className="row align-items-end">
             <div className="col-md-12">
-              <div>
-                <h2>Lorem Ipsum Is A dummy Text</h2>
-                <p>
+              <div className="sec_title">
+                <h2 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000">Lorem Ipsum Is A dummy Text</h2>
+                <p data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="2000">
                   when an unknown printer took a galley of type and scrambled it
                   to make a type specimen book. It has survived not only five
                   centuries, but also the leap into electronic typesetting,
                   remaining essentially unchanged. It was popularised in the
                   1960s with the release of Letraset sheets containing Lorem.
                 </p>
+                <button type="button" className="brand_btn" data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="banner_right_img">
+          <img draggable={false} src={banner2imgRight} alt=""></img>
+        </div>
+      </section>
+
+      <section className="publish_book_sec">
+      <img
+          src={polygon01}
+          className="publish_polygon"
+          alt="polygon" 
+        />
+      <img
+          src={polygon03}
+          className="publish_polygon_3"
+          alt="polygon" 
+        />
+        <div className="publishBgPattern">
+          <img draggable={false} src={categorybk} alt="" />
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="sec_title">
+                <h2 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000">
+                  How To Easily <span class="color-red">Publish</span> Your{" "}
+                  <span class="color-red">Book</span>
+                </h2>
+              </div>
+              <div className="publish_book_content">
+                <img
+                  draggable={false}
+                  src={publishBookImg}
+                  className="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="testimonial">
+        <img
+          src={polygon01}
+          className="testimonial_polygon"
+          alt="polygon" 
+        />
+        <img
+          draggable={false}
+          src={processFeather}
+          className="process_feather"
+          alt="feather"
+        />
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-sm-10 mx-auto">
+              <div className="testimonial_tabs" data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="1000">
+                <img
+                  draggable={false}
+                  src={testimonialGroupImg}
+                  className="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="col-lg-6 col-sm-10 mx-auto">
+              <div className="testimonial_tabs_content" data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-duration="2000">
+                <div className="sec_title">
+                  <h2>
+                    <span className="color-red">TESTIMONIALS</span>
+                  </h2>
+                  <img
+                    src={testimonialQuote}
+                    className="testimonial_quotes"
+                    alt=""
+                  />
+                  <h4>Jhon Smith</h4>
+                  <p>
+                    “When an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only
+                    five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem.
+                  </p>
+                  <img
+                    draggable={false}
+                    src={ratingStars}
+                    className="testimonial_stars"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="progress_sec">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-4 col-sm-10 mx-auto">
+              <div className="progress_item">
+                <div className="sec_title">
+                  <h2>
+                    10+ YEAR OF <br />
+                    EXPERIANCE
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-10 mx-auto">
+              <div className="progress_item">
+                <div className="sec_title">
+                  <h2>
+                    700+ bOOK <br />
+                    wRITTEN
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-10 mx-auto">
+              <div className="progress_item">
+                <div className="sec_title">
+                  <h2>
+                    250+ AMERICAN
+                    <br />
+                    WRITERS
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="publication_sec">
+      <img
+          src={polygon01}
+          className="publication_polygon"
+          alt="polygon" 
+        />
+      <img
+          src={polygon03}
+          className="publication_polygon_3"
+          alt="polygon" 
+        />
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-sm-10 mx-auto">
+              <div className="publication_images" data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="1000">
+                <img
+                  draggable={false}
+                  src={publicationBook1}
+                  className="publicationBook1"
+                  alt=""
+                />
+                <img
+                  draggable={false}
+                  src={publicationBook2}
+                  className="publicationBook2"
+                  alt=""
+                />
+                <div className="audio_player">
+                  <audio controls>
+                    <source src="horse.ogg" type="audio/ogg" />
+                    <source src="horse.mp3" type="audio/mpeg" />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-sm-10 mx-auto">
+              <div className="publication_content">
+                <div className="sec_title">
+                  <h2 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="1000">
+                    Paperback <br />
+                    <span class="color-red">Publication</span>
+                  </h2>
+                  <p data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="2000">
+                    Your book's global accessibility is a top priority for us.
+                    Ensuring availability across all platforms, our
+                    comprehensive marketing and distribution strategies
+                    encompass both hardcover and paperback options. One source
+                    for everything you require, backed by our committed group of
+                    leading experts.
+                  </p>
+                  <h2 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000">
+                    Online <br />
+                    <span class="color-red">Publication</span>
+                  </h2>
+                  <p data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="3000">
+                    We are highly satisfied with our capacity to transform
+                    aspiring authors into published ones by granting them
+                    unmatched authority over all aspects of their creative
+                    concept and publishing objectives, focusing on eBooks. Our
+                    all-encompassing assistance surpasses conventional
+                    publishing; we actively collaborate with you to formulate a
+                    resilient marketing strategy, guaranteeing a triumphant
+                    debut and optimizing your financial gains.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -701,17 +1259,23 @@ const Home = () => {
       </section>
 
       <section class="faqs_sec">
+      
+      <div className="publishBgPattern">
+          <img draggable={false} src={categorybk} alt="" />
+        </div>
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="sec_title">
-                <h2>
+                <h2 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="2000">
                   FREQUENTLY
                   <span class="color-red">ASKED QUESTIONS</span>
                 </h2>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6 col-sm-10 mx-auto">
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
@@ -768,199 +1332,8 @@ const Home = () => {
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
-              
-              {/* <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                    >
-                      <span class="numbering">01.</span>
-                      <span class="card_btn_content">
-                        Lorem Ipsum is simply dummy text of the and typesetting
-                        industry.
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged. It was
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                    >
-                      <span class="numbering">01.</span>
-                      <span class="card_btn_content">
-                        Lorem Ipsum is simply dummy text of the and typesetting
-                        industry.
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged. It was
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                    >
-                      <span class="numbering">01.</span>
-                      <span class="card_btn_content">
-                        Lorem Ipsum is simply dummy text of the and typesetting
-                        industry.
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged. It was
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
-            <div class="col-md-6">
-              {/* <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFour">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                    >
-                      <span class="numbering">01.</span>
-                      <span class="card_btn_content">
-                        Lorem Ipsum is simply dummy text of the and typesetting
-                        industry.
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFour"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged. It was
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFive">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive"
-                    >
-                      <span class="numbering">01.</span>
-                      <span class="card_btn_content">
-                        Lorem Ipsum is simply dummy text of the and typesetting
-                        industry.
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFive"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged. It was
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingSix">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseSix"
-                    >
-                      <span class="numbering">01.</span>
-                      <span class="card_btn_content">
-                        Lorem Ipsum is simply dummy text of the and typesetting
-                        industry.
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseSix"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic typesetting,
-                      remaining essentially unchanged. It was
-                    </div>
-                  </div>
-                </div>
-              </div> */}
+            <div class="col-lg-6 col-sm-10 mx-auto">
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
@@ -1025,25 +1398,32 @@ const Home = () => {
       <section class="get_touch_sec">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-sm-10 mx-auto">
+              <div class="get_touch_img" data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-duration="1000">
+                <img
+                  draggable={false}
+                  src={getTouchBook}
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
               <div class="get_touch_title">
                 <div class="sec_title">
-                  <h2>
-                    Stay in
+                  <h2 data-aos="fade-up"
+                data-aos-offset="0"
+                data-aos-duration="2000">
+                    TO BE
                     <br />
-                    touch
-                    <br />
-                    with Us!
+                    DESIGNED!
                   </h2>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="get_touch_img">
-                <img src={getTouchBook} class="img-fluid" alt="" />
-              </div>
-            </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-sm-6">
               <div class="get_touch_form">
                 <form>
                   <div class="mb-3">
@@ -1077,6 +1457,271 @@ const Home = () => {
                     Submit
                   </button>
                 </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="footer">
+        <div className="footer_inner_div">
+          <div className="container">
+            <div className="row justify-content-between">
+              <div className="col-lg-7 col-sm-12">
+                <div className="row">
+                  <div className="col-md-12">
+                    <div className="footer_social">
+                      <div className="footer_social_item">
+                        <a href="javascript:;">
+                          <img
+                            draggable={false}
+                            src={instagramIcon}
+                            className="footer_social_iconImg"
+                            alt=""
+                          />
+                        </a>
+                        <div className="footer_social_text">
+                          <p>
+                            Followers <br />
+                            <b>10K</b>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="footer_social_item">
+                        <a href="javascript:;">
+                          <img
+                            draggable={false}
+                            src={facebookIcon}
+                            className="footer_social_iconImg"
+                            alt=""
+                          />
+                        </a>
+                        <div className="footer_social_text">
+                          <p>
+                            Followers <br />
+                            <b>121K</b>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="footer_social_item">
+                        <a href="javascript: void();">
+                          <img
+                            draggable={false}
+                            src={youtubeIcon}
+                            className="footer_social_iconImg"
+                            alt=""
+                          />
+                        </a>
+                        <div className="footer_social_text">
+                          <p>
+                            Followers <br />
+                            <b>77K</b>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="footer_social_item">
+                        <a href="javascript:;">
+                          <img
+                            draggable={false}
+                            src={twitterIcon}
+                            className="footer_social_iconImg"
+                            alt=""
+                          />
+                        </a>
+                        <div className="footer_social_text">
+                          <p>
+                            Followers <br />
+                            <b>2K</b>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="footer_spacer"></div>
+                  <div className="col-md-4">
+                    <div className="footer_quick_links">
+                      <h3 className="footer_subhead">
+                        Ghostwriting <br />
+                        Services
+                      </h3>
+                      <ul className="footer_links">
+                        <li className="footer_link">
+                          <a href="javascript">business books</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Nonfiction</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">memoir/autobiography</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">fiction</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Western Writing</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Romantic Writing</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Action Adventure</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Christian- Faith</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Drama Writing</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">eBook Writing</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Horror Writing</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Hip Hop Ghostwriters</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Article Writing</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-md-4">
+                    <div className="footer_quick_links">
+                      <h3 className="footer_subhead">
+                        Publishing & <br /> Editing
+                      </h3>
+                      <ul className="footer_links">
+                        <li className="footer_link">
+                          <a href="javascript">PR Publication</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Book Publishing</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Printing Books</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Self-Help Publishing Amazon</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Amazon Printing</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Book Formatting</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Book Review Template</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Children's Book Editing</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Proofreading Editing</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-md-4">
+                    <div className="footer_quick_links">
+                      <h3 className="footer_subhead">
+                        Book Marketing and
+                        <br /> Production
+                      </h3>
+                      <ul className="footer_links">
+                        <li className="footer_link">
+                          <a href="javascript">Book Cover Design</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Audio Book</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Illustrations</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Author Logo Design</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Author E-Commerce Website</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Book Video</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">Ebook Social Media Marketing</a>
+                        </li>
+                        <li className="footer_link">
+                          <a href="javascript">EBook SEO</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-sm-12">
+                <div className="footer_avail">
+                  <h3 className="footer_avail-text">
+                    Avail $199 Value <br />
+                    Service For Free
+                  </h3>
+                  <button className="avail_btn">Avail Now</button>
+                  <div className="dmca_img">
+                    <img src={dmcaImg} alt="" />
+                  </div>
+                </div>
+                <div className="footer_payment">
+                  <h3 className="footer_payment-text">
+                    <span class="color-red">Secure</span> payment By
+                  </h3>
+                  <div className="dmca_img">
+                    <img src={paymentImg} alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-12 col-lg-12">
+                <div className="footer_extra_links">
+                  <ul className="footer_links">
+                    <li className="footer_link">
+                      <a href="javascript:;">About</a>
+                    </li>
+                    <li className="footer_link">
+                      <a href="javascript:;">Review</a>
+                    </li>
+                    <li className="footer_link">
+                      <a href="javascript:;">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="footer_spacer"></div>
+              <div className="col-md-12">
+                <div className="footer_brand_imgs">
+                  <img src={footerBrandImgs} className="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="copyright_sec">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="copyright">
+                  <p>Copyright © 2024. All Rights Reserved</p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="footer_termCondition_links">
+                  <ul className="footer_links">
+                    <li className="footer_link">
+                      <a href="javascript:;">Privacy Policy</a>
+                    </li>
+                    <li className="footer_link">
+                      <a href="javascript:;">Terms of Service</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

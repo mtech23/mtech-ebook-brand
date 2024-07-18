@@ -4,7 +4,7 @@ import Home from '../screens/Home';
 
 const Router = () => {
   return (
-    <BrowserRouter basename="project-name">
+    <BrowserRouter basename="ebookBrand">
       <Routes>
         <Route path="/" element={<Home/>} />
       </Routes>
