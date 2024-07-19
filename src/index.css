@@ -475,6 +475,35 @@ width: 100%;
 }
 
 @media(max-width: 767px){
+
+  .navbar-collapse {
+    background-color: rgb(233, 233, 233) !important;
+    z-index: 10;
+    padding: 14px !important;
+    margin-top: 8px !important;
+    border-radius: 10px !important;
+}
+
+  .making_it_none{
+    display: none !important;
+  }
+
+  #parent-circle{
+    margin: 0 auto;
+  }
+
+  .main_duolingo_tab_below{
+    display: flex !important;
+  }
+
+  .parent-circle{
+    margin: 0 auto;
+}
+
+#parent-circle {
+  transform: translateX(0%) !important;
+}
+
   .hero_btns{
     flex-wrap: wrap;
   }
@@ -508,4 +537,139 @@ width: 100%;
   }
 
 
+}
+
+@media(max-width: 425px){
+  .hero_section{
+    padding: 80px 0px 0px !important;
+  }
+
+  .ebook_publisher_title {
+    font-size: 30px !important;
+}
+
+.brand_name_title{
+  font-size: 22px !important;
+}
+
+.brilliant_mind_section {
+  margin-top: -450px !important;
+ 
+}
+
+.book_img img {
+  width: 40% !important;
+}
+
+.first_semi img, .second_semi img, .third_semi img {
+  width: 52px !important;
+}
+
+
+.book_semicircle_box {
+  height: 112px !important;
+}
+
+.circle_with_semi img, .circle_with_semi2 img {
+  width: 90px !important;
+}
+
+
+.circle_with_semi {
+      left: -55px !important;
+      bottom: -76px !important;
+  }
+
+
+  .circle_with_semi2 {
+      right: -17% !important;
+      top: -48px !important;
+  }
+
+  #parent-circle {
+    width: 290px !important;
+    height: 290px !important;
+   
+}
+
+.helping_tab_para {
+    padding-right: 50px !important;
+}
+
+.first_banner_section{
+  margin-top: -260px !important;
+  padding: 350px 0px 0px !important;
+}
+
+.first_category_detail_below{
+  justify-content: center;
+}
+
+.category_detail_desc_below{
+  text-align: center !important;
+}
+
+.category_section{
+  background-size: 115% 100% !important;
+}
+
+.category_polygonImg01 {
+width: 90px !important;
+height: 90px !important;
+bottom: 9% !important;
+}
+
+
+.banner_left_img, .banner_right_img {
+  max-width: 110px !important;
+}
+
+.second_banner_section {
+padding: 134px 0px 0px !important;
+}
+
+.banner_right_img{
+top: 10% !important;
+}
+
+.testimonial_polygon {
+  max-width: 130px !important;
+  bottom: 20px !important;
+}
+
+
+.publicationBook1 {
+  transform: scale(1) !important;
+}
+
+.publicationBook2 {
+  width: 70% !important;
+  position: relative;
+  left: 0% !important;
+  z-index: 2;
+  transform: translateY(-100px) !important;
+}
+
+.audio_player {
+  max-width: 160px !important;
+  bottom: 160px !important;
+  right: 50% !important;
+}
+
+.footer_social_item img{
+  width: 30px;
+}
+
+.footer_social{
+  padding-top: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+}
+
+.sec_title h2 {
+  font-size: 20px !important;
+}
+
+.get_touch_sec {
+  overflow: hidden !important;
+}
 }

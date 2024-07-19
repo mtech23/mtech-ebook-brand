@@ -55,6 +55,7 @@ import twitterIcon from "./twitter-icon.png";
 import dmcaImg from "./dmca.png";
 import paymentImg from "./payment.png";
 import footerBrandImgs from "./footer-brand-imgs.png";
+import userImg01 from "./user01.png";
 
 export {
     chatIcon,
@@ -112,5 +113,6 @@ export {
   twitterIcon,
   dmcaImg,
   paymentImg,
-  footerBrandImgs
+  footerBrandImgs,
+  userImg01
 };

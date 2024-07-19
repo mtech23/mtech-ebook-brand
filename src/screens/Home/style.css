@@ -61,7 +61,7 @@
 }
 
 .hero_section {
-  padding: 40px 0px 0px;
+  padding: 100px 0px 0px;
   background-image: url("../../asserts/images/Layer\ 1.png"),
     url("../../asserts/images/Layer\ 3\ copy.png");
   background-position: top left, top right;
@@ -937,6 +937,7 @@ audio::-webkit-media-controls-time-remaining-display {
 .get_touch_sec {
   background-color: #ed0742;
   padding: 40px 0 40px;
+  /* overflow: hidden; */
 }
 .get_touch_title .sec_title h2 {
   font-size: 62px;
@@ -1093,3 +1094,33 @@ audio::-webkit-media-controls-time-remaining-display {
   padding: 30px 0px;
   display: none;
 }
+
+
+.single_duolingo_tab_below{
+  display: flex;
+align-items: center;
+gap: 12px;
+justify-content: center;
+}
+
+.duolingo_tab_img_below{
+  height: 60px;
+width: 60px;
+}
+
+.main_duolingo_tab_below{
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  padding-top: 24px;
+}
+
+
+/* .navbar-collapse{
+  background-color: rgb(233, 233, 233);
+  z-index: 10;
+  padding: 14px;
+  margin-top: 8px;
+  border-radius: 10px;
+} */
