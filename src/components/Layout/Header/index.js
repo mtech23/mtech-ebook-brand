@@ -52,47 +52,47 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="justify-content-between w-100">
-                    <Nav.Link href="#home" as={Link} to="/">
+                    <Link href="#home" as={Link} to="/">
                         <p className="navbar_para">Ebook Publishers llc</p>
                         <p className="navbar_para_bottom">Consultation</p>
-                    </Nav.Link>
+                    </Link>
 
-                    <Nav.Link href="#link" as={Link} to="/ghost-writer">
+                    <Link href="#link" as={Link} to="/ghost-writer">
                         <p className="navbar_para">
                         Self <span className="header_light_bold">Publishing</span>
                         </p>
                         <p className="navbar_para_bottom">Publishing</p>
-                    </Nav.Link>
+                    </Link>
 
-                    <Nav.Link href="#link">
+                    <Link href="#link" to="/ghost-writer">
                         <p className="navbar_para">
                         Ghostwriting{" "}
                         <span className="header_light_bold">Services</span>
                         </p>
                         <p className="navbar_para_bottom">Writing</p>
-                    </Nav.Link>
+                    </Link>
 
-                    <Nav.Link href="#link">
+                    <Link href="#link">
                         <p className="navbar_para">
                         The Book{" "}
                         <span className="header_light_bold">Designer</span>
                         </p>
                         <p className="navbar_para_bottom">Production</p>
-                    </Nav.Link>
+                    </Link>
 
-                    <Nav.Link href="#link">
+                    <Link href="#link">
                         <p className="navbar_para">
                         Book <span className="header_light_bold">Editor</span>
                         </p>
                         <p className="navbar_para_bottom">Proofreading</p>
-                    </Nav.Link>
+                    </Link>
 
-                    <Nav.Link href="#link">
+                    <Link href="#link">
                         <p className="navbar_para">
                         <span className="header_light_bold">Marketing</span>
                         </p>
                         <p className="navbar_para_bottom">Branding</p>
-                    </Nav.Link>
+                    </Link>
                     </Nav>
                 </Navbar.Collapse>
                 </Container>
