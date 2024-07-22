@@ -56,6 +56,7 @@ import dmcaImg from "./dmca.png";
 import paymentImg from "./payment.png";
 import footerBrandImgs from "./footer-brand-imgs.png";
 import userImg01 from "./user01.png";
+import userImg01 from "./";
 
 export {
     chatIcon,

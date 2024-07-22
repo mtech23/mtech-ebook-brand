@@ -22,6 +22,7 @@
       border-radius: 50%;
       top: 50%; 
       left: 50%;
+      transform-origin: center;
 
       &.blue {
         background-color: #416ba9;
@@ -84,11 +85,11 @@
     height: 100%;
   }
 
-  /* @keyframes rotate {
+  @keyframes rotate {
     from {
       -webkit-transform: rotate(0deg);
     }
     to {
       -webkit-transform: rotate(359deg);
     }
-  } */
+  }
