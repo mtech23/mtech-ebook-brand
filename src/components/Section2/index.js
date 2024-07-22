@@ -61,9 +61,9 @@ const Section2 = (props) => {
     return (
         <div>
             <section class="brilliant_mind_section">
-                <div className="polygonImg01">
-                    <img draggable={false} src={polygon01} alt="polygon"></img>
-                </div>
+             {props?.polygon01 &&   <div className="polygonImg01">
+                    <img draggable={false} src={props?.polygon01} alt="polygon"></img>
+                </div>}
 
                 <div className="polygonImg02">
                     <img draggable={false} src={polygon01} alt="polygon"></img>

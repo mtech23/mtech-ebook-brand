@@ -8,7 +8,7 @@ import leatherImg from "./Group 1171276095.png";
 import polygon01 from "./Polygon1.png";
 import polygon03 from "./Polygon3.png";
 import chatIcon from "./chaticon.png";
-
+ 
 import semi01 from "./semi1.png";
 import semi02 from "./semi2.png";
 import semi03 from "./semi3.png";
@@ -56,11 +56,13 @@ import dmcaImg from "./dmca.png";
 import paymentImg from "./payment.png";
 import footerBrandImgs from "./footer-brand-imgs.png";
 import userImg01 from "./user01.png";
-import sec2img from './sec2img.png'
-// import userImg01 from "./";
-
+import innerBadge1 from "./inner-badge-1.png";
+import innerBadge2 from "./inner-badge-2.png";
+import innerBadge3 from "./inner-badge-3.png";
+import saleBadge from "./sale-badge.png";
+import sec2img from "./sec2img.png";
+ 
 export {
-  sec2img,
     chatIcon,
   heroImgLeft,
   brilliantBookImg,
@@ -117,5 +119,11 @@ export {
   dmcaImg,
   paymentImg,
   footerBrandImgs,
-  userImg01
+  userImg01,
+  innerBadge1,
+innerBadge2,
+innerBadge3,
+saleBadge,
+sec2img
 };
+ 
