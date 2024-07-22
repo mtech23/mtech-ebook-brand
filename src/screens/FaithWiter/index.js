@@ -1,8 +1,5 @@
-import React from "react";
-import UserLayout from "../../components/Layout/UserLayout";
-import {
-  sec2img,
-} from "../../asserts/images";
+import React from 'react'
+import UserLayout from '../../components/Layout/UserLayout'
 import InnerHero from "../../components/InnerHero";
 import Section2 from "../../components/Section2";
 import CustomCategory from "../../components/CustomCategory";
@@ -14,15 +11,22 @@ import CustomPublication from "../../components/CustomPublication";
 import Faq from "../../components/Faq";
 import GetTouch from "../../components/GetTouch";
 
-const GhostWriter = () => {
+import {
+    
+    sec2img,
+  } from "../../asserts/images";
+
+const FaithWriter = () => {
   return (
     <>
-      <UserLayout>
+        <UserLayout>
+
         <InnerHero
           innerheroclass="ghostWritingBg"
-          title="Behind Every Great Story, There's A"
-          subtitle=" Ghostwriter!"
-          para="We understand that every story deserves to be told, but not every author has the time, expertise, or inclination to write it themselves. That's where our Ghostwriting Services come in. We pride ourselves on being the invisible hand behind many captivating narratives, helping individuals, businesses, and celebrities share their stories with the world."
+          title="Writing The Next Chapter Of Faith Your"
+          subtitle=" Religious "
+          title2="Book Starts Here"
+          para="Whether you're a seasoned theologian, a spiritual leader, or someone with a deep personal journey, we are dedicated to helping you create a convincing story that resonates deeply with readers. At Random House Publishers, we bring decades of publishing excellence to guide your manuscript from inception to publication, ensuring your voice and message shine through. "
         />
 
         <Section2
@@ -44,9 +48,9 @@ const GhostWriter = () => {
         <CustomPublication />
         <Faq />
         <GetTouch />
-      </UserLayout>
+        </UserLayout>
     </>
-  );
-};
+  )
+}
 
-export default GhostWriter;
+export default FaithWriter

@@ -18,6 +18,7 @@ const InnerHero = (props) => {
                 <h2>
                   {props?.title}
                   <span class="color-red">{props?.subtitle}</span>
+                  {props?.title2}
                 </h2>
                 <p>
                   {props?.para}
@@ -26,7 +27,7 @@ const InnerHero = (props) => {
                   <button className="btn-bg-white">
                     Let’s Discuss Project
                   </button>
-                  <button className="btn-bg-red">Let’s Discuss Project</button>
+                  <button className="btn-bg-red">Call Us Now</button>
                 </div>
               </div>
             </div>

@@ -1,8 +1,5 @@
-import React from "react";
-import UserLayout from "../../components/Layout/UserLayout";
-import {
-  sec2img,
-} from "../../asserts/images";
+import React from 'react'
+import UserLayout from '../../components/Layout/UserLayout'
 import InnerHero from "../../components/InnerHero";
 import Section2 from "../../components/Section2";
 import CustomCategory from "../../components/CustomCategory";
@@ -14,21 +11,27 @@ import CustomPublication from "../../components/CustomPublication";
 import Faq from "../../components/Faq";
 import GetTouch from "../../components/GetTouch";
 
-const GhostWriter = () => {
+import {
+    
+    sec2img,
+  } from "../../asserts/images";
+
+const BookMarketing = () => {
   return (
     <>
-      <UserLayout>
+        <UserLayout>
+
         <InnerHero
           innerheroclass="ghostWritingBg"
-          title="Behind Every Great Story, There's A"
-          subtitle=" Ghostwriter!"
-          para="We understand that every story deserves to be told, but not every author has the time, expertise, or inclination to write it themselves. That's where our Ghostwriting Services come in. We pride ourselves on being the invisible hand behind many captivating narratives, helping individuals, businesses, and celebrities share their stories with the world."
+          title="Reach Readers Everywhere Our Book Marketing Service"
+          subtitle=" Makes It Happen!"
+          para="Our Book Marketing service is designed to catapult your literary masterpiece into the spotlight it deserves. With a personalized approach to each author and their work, we employ strategic marketing tactics that resonate with readers across various platforms. From engaging social media campaigns to targeted email newsletters and innovative promotional events, we ensure your book "
         />
 
         <Section2
         innerSec2Class="innerbrilliant_mind_section"
           title="Trust Our "
-          subtitle="  Ghostwriters"
+          subtitle=" Ghostwriters"
           title2="For Your Voice!"
           subtitle1="How we work?"
           subtitle2="    Tailored Collaborations?"
@@ -44,9 +47,9 @@ const GhostWriter = () => {
         <CustomPublication />
         <Faq />
         <GetTouch />
-      </UserLayout>
+        </UserLayout>
     </>
-  );
-};
+  )
+}
 
-export default GhostWriter;
+export default BookMarketing

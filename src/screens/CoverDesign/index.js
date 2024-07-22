@@ -1,8 +1,5 @@
 import React from "react";
 import UserLayout from "../../components/Layout/UserLayout";
-import {
-  sec2img,
-} from "../../asserts/images";
 import InnerHero from "../../components/InnerHero";
 import Section2 from "../../components/Section2";
 import CustomCategory from "../../components/CustomCategory";
@@ -14,21 +11,23 @@ import CustomPublication from "../../components/CustomPublication";
 import Faq from "../../components/Faq";
 import GetTouch from "../../components/GetTouch";
 
-const GhostWriter = () => {
+import { sec2img } from "../../asserts/images";
+
+const CoverDesign = () => {
   return (
     <>
       <UserLayout>
         <InnerHero
           innerheroclass="ghostWritingBg"
-          title="Behind Every Great Story, There's A"
-          subtitle=" Ghostwriter!"
-          para="We understand that every story deserves to be told, but not every author has the time, expertise, or inclination to write it themselves. That's where our Ghostwriting Services come in. We pride ourselves on being the invisible hand behind many captivating narratives, helping individuals, businesses, and celebrities share their stories with the world."
+          title="Make Your Book Stand Out On "
+          subtitle=" Every Shelf"
+          para="At Random House Publishers, we understand that a book's cover is more than just a protective layer; it's a powerful tool to capture attention and communicate your story at a glance. Our book cover design service is dedicated to ensuring your book not only stands out on every shelf but also resonates deeply with your target audience."
         />
 
         <Section2
-        innerSec2Class="innerbrilliant_mind_section"
+          innerSec2Class="innerbrilliant_mind_section"
           title="Trust Our "
-          subtitle="  Ghostwriters"
+          subtitle=" Ghostwriters"
           title2="For Your Voice!"
           subtitle1="How we work?"
           subtitle2="    Tailored Collaborations?"
@@ -49,4 +48,4 @@ const GhostWriter = () => {
   );
 };
 
-export default GhostWriter;
+export default CoverDesign;

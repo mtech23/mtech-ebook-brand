@@ -25,26 +25,26 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
-  border: 8px solid #ec0742;
+  border: 5px solid #ec0742;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #ec0742;
-  padding: 13px 30px;
+  padding: 10px 30px;
   border-radius: 50px;
 }
 .btn-bg-red{
   background-image: url(asserts/images/btn-bgg-red.png);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
-  border: 8px solid #fff;
+  border: 5px solid #fff;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #fff;
-  padding: 13px 30px;
+  padding: 10px 30px;
   border-radius: 50px;
 }
 .inner-hero {
@@ -160,8 +160,6 @@
 .ghostWritingBg{
   background-image: url(asserts/images/inner-bg-ghostwritting.png);
 }
-.innerbrilliant_mind_section{
-  background-image: url(asserts/images/inner-bg-large-img.png);
-}
+
 /* Inner Pages Css End */
 /* Usama Css End */
