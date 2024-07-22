@@ -1,12 +1,6 @@
 import React from 'react'
 import './style.css'
 import {
-    heroImgLeft,
-    heroImgRight,
-    phoneImg,
-    questionImg,
-    leatherImg,
-    brilliantBookImg,
     boxBelowImg,
     polygon01,
     semi01,
@@ -14,53 +8,13 @@ import {
     semi03,
     redCirclewithSemi,
     redSemibehindBook,
-    siteScrollImg,
-    helpingIcon01,
-    helpingIcon02,
-    helpingIcon03,
-    helpingIcon04,
-    helpingIcon05,
-    Imgundercircle,
-    bannerImg01,
-    ImgUnderArc,
-    A4book,
-    categoryIcon01,
-    categoryIcon02,
-    categoryIcon03,
-    categoryIcon04,
-    categoryIcon05,
-    categorybk,
-    processImg01,
-    processImg02,
-    processImg03,
-    processImg04,
-    secondBannerImg01,
-    getTouchBook,
-    processFeather,
-    helpingBook,
-    banner2imgRight,
-    publishBookImg,
-    publishBookBgPattern,
-    testimonialGroupImg,
-    testimonialQuote,
-    ratingStars,
-    publicationBook1,
-    publicationBook2,
-    instagramIcon,
-    facebookIcon,
-    youtubeIcon,
-    twitterIcon,
-    dmcaImg,
-    paymentImg,
-    footerBrandImgs,
-    polygon03,
-    chatIcon,
+    
 } from "../../asserts/images";
 import Partners from '../Partners';
 const Section2 = (props) => {
     return (
         <div>
-            <section class="brilliant_mind_section">
+            <section class={`brilliant_mind_section ${props.innerSec2Class}`}>
              {props?.polygon01 &&   <div className="polygonImg01">
                     <img draggable={false} src={props?.polygon01} alt="polygon"></img>
                 </div>}

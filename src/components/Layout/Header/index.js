@@ -57,14 +57,14 @@ const Header = () => {
                         <p className="navbar_para_bottom">Consultation</p>
                     </Link>
 
-                    <Link href="#link" as={Link} to="/ghost-writer">
+                    <Link   as={Link} to="/book-publishing">
                         <p className="navbar_para">
                         Self <span className="header_light_bold">Publishing</span>
                         </p>
                         <p className="navbar_para_bottom">Publishing</p>
                     </Link>
 
-                    <Link href="#link" to="/ghost-writer">
+                    <Link to={"/ghost-writer"} >
                         <p className="navbar_para">
                         Ghostwriting{" "}
                         <span className="header_light_bold">Services</span>
@@ -72,7 +72,7 @@ const Header = () => {
                         <p className="navbar_para_bottom">Writing</p>
                     </Link>
 
-                    <Link href="#link">
+                    <Link to={"/audio-book-design"}>
                         <p className="navbar_para">
                         The Book{" "}
                         <span className="header_light_bold">Designer</span>
@@ -80,14 +80,14 @@ const Header = () => {
                         <p className="navbar_para_bottom">Production</p>
                     </Link>
 
-                    <Link href="#link">
+                    <Link to={"/book-editing"}>
                         <p className="navbar_para">
                         Book <span className="header_light_bold">Editor</span>
                         </p>
                         <p className="navbar_para_bottom">Proofreading</p>
                     </Link>
 
-                    <Link href="#link">
+                    <Link to={"/book-marketing"}>
                         <p className="navbar_para">
                         <span className="header_light_bold">Marketing</span>
                         </p>

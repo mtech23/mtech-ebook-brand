@@ -205,31 +205,31 @@ const Footer = () => {
 
                       {/* <ul className="footer_links">
                         <li className="footer_link">
-                          <a href="javascript">PR Publication</a>
+                          <Link to="javascript">PR Publication</Link>
                         </li>
                         <li className="footer_link">
-                          <a href="javascript">Book Publishing</a>
+                          <Link to="javascript">Book Publishing</Link>
                         </li>
                         <li className="footer_link">
-                          <a href="javascript">Printing Books</a>
+                          <Link to="javascript">Printing Books</Link>
                         </li>
                         <li className="footer_link">
-                          <a href="javascript">Self-Help Publishing Amazon</a>
+                          <Link to="javascript">Self-Help Publishing Amazon</Link>
                         </li>
                         <li className="footer_link">
-                          <a href="javascript">Amazon Printing</a>
+                          <Link to="javascript">Amazon Printing</Link>
                         </li>
                         <li className="footer_link">
-                          <a href="javascript">Book Formatting</a>
+                          <Link to="javascript">Book Formatting</Link>
                         </li>
                         <li className="footer_link">
-                          <a href="javascript">Book Review Template</a>
+                          <Link to="javascript">Book Review Template</Link>
                         </li>
                         <li className="footer_link">
-                          <a href="javascript">Children's Book Editing</a>
+                          <Link to="javascript">Children's Book Editing</Link>
                         </li>
                         <li className="footer_link">
-                          <a href="javascript">Proofreading Editing</a>
+                          <Link to="javascript">Proofreading Editing</Link>
                         </li>
                       </ul> */}
 
@@ -251,34 +251,34 @@ const Footer = () => {
                         <br /> Production
                       </h3>
 
-                      {/* <ul className="footer_links">
-                        <li className="footer_link">
-                          <a href="javascript">Book Cover Design</a>
-                        </li>
-                        <li className="footer_link">
-                          <a href="javascript">Audio Book</a>
-                        </li>
-                        <li className="footer_link">
-                          <a href="javascript">Illustrations</a>
-                        </li>
-                        <li className="footer_link">
-                          <a href="javascript">Author Logo Design</a>
-                        </li>
-                        <li className="footer_link">
-                          <a href="javascript">Author E-Commerce Website</a>
-                        </li>
-                        <li className="footer_link">
-                          <a href="javascript">Book Video</a>
-                        </li>
-                        <li className="footer_link">
-                          <a href="javascript">Ebook Social Media Marketing</a>
-                        </li>
-                        <li className="footer_link">
-                          <a href="javascript">EBook SEO</a>
-                        </li>
-                      </ul> */}
-
                       <ul className="footer_links">
+                        <li className="footer_link">
+                          <Link to="/cover-design">Book Cover Design</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/audio-book-design">Audio Book</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/illustration">Illustrations</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="javascript">Author Logo Design</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/website-author">Author E-Commerce Website</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="javascript">Book Video</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="javascript">Ebook Social Media Marketing</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="javascript">EBook SEO</Link>
+                        </li>
+                      </ul>
+
+                      {/* <ul className="footer_links">
                         {
                             bookMarketings.map((bookmarketing, index) => (
                                 <li key={index} className="footer_link">
@@ -286,7 +286,7 @@ const Footer = () => {
                                 </li>
                             ))
                         }
-                      </ul>
+                      </ul> */}
 
 
                     </div>

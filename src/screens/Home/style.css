@@ -745,7 +745,7 @@ audio::-webkit-media-controls-time-remaining-display {
   padding: 40px 0;
 }
 .sec_title h2 {
-  font-size: 42px;
+  font-size: 32px;
   font-family: "Jomolhari", serif;
   line-height: 1.2;
   font-weight: 400;
@@ -760,6 +760,13 @@ audio::-webkit-media-controls-time-remaining-display {
 .sec_title h4 {
   font-size: 26px;
   font-family: "Jomolhari", serif;
+}
+.subtititle2{
+  font-size: 28px !important    ;
+  font-family: "Jomolhari", serif!important;
+  line-height: 1.2!important;
+  font-weight: 400!important;
+  /* text-transform: uppercase; */
 }
 
 .sec_title p {
@@ -1136,6 +1143,13 @@ width: 60px;
   justify-content: center;
   gap: 14px;
   padding-top: 24px;
+}
+
+.innerbrilliant_mind_section{
+  /* background-image: url(../../asserts/images/inner-bg-large-img.png); */
+  background-image: url(../../asserts/images/inner-sec1-bg.png);
+  margin-top: unset;
+  padding-top: 150px;
 }
 
 
