@@ -56,7 +56,10 @@ import dmcaImg from "./dmca.png";
 import paymentImg from "./payment.png";
 import footerBrandImgs from "./footer-brand-imgs.png";
 import userImg01 from "./user01.png";
-import userImg01 from "./";
+import innerBadge1 from "./inner-badge-1.png";
+import innerBadge2 from "./inner-badge-2.png";
+import innerBadge3 from "./inner-badge-3.png";
+import saleBadge from "./sale-badge.png";
 
 export {
     chatIcon,
@@ -115,5 +118,9 @@ export {
   dmcaImg,
   paymentImg,
   footerBrandImgs,
-  userImg01
+  userImg01,
+  innerBadge1,
+innerBadge2,
+innerBadge3,
+saleBadge
 };

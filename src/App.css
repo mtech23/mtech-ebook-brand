@@ -15,3 +15,153 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Usama Css Start */
+/* Inner Pages Css Start */
+.btn-bg-white{
+  background-image: url(asserts/images/btn-bgg-white.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: 8px solid #ec0742;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #ec0742;
+  padding: 13px 30px;
+  border-radius: 50px;
+}
+.btn-bg-red{
+  background-image: url(asserts/images/btn-bgg-red.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: 8px solid #fff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  padding: 13px 30px;
+  border-radius: 50px;
+}
+.inner-hero {
+  padding: 120px 0 0;
+}
+.inner-btn-group {
+  display: flex;
+  gap: 10px;
+}
+.inner-hero_badges {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.inner-hero_badges img {
+  max-width: 143px;
+}
+.inner-hero_form {
+  /* border: 1px solid #ed0742; */
+  padding: 60px 25px 20px;
+  background-image: url(asserts/images/inner-hero-form-bg-1.png);
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 99;
+}
+.inner-hero_form-badge {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 120px;
+}
+.inner-hero_form_title {
+  font-size: 21px;
+  font-family: "Jomolhari", serif;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ed0742;
+  text-align: center;
+}
+.inner-hero_form .form-control {
+  background: transparent;
+  color: #838383;
+  border: 1px solid #ed0742;
+  border-radius: 0;
+}
+.inner-hero_form .form-control:focus {
+  box-shadow: unset;
+  background-color: transparent;
+  border-color: #ed0742;
+  color: #838383;
+}
+.inner-hero_form_subtitle {
+  font-size: 20px;
+  line-height: 1.7;
+  font-family: poppinsRegular;
+}
+.brand-radio-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.custom-radio {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 28px;
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: poppinsRegular;
+  color: #838383;
+}
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.custom-radio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 1px solid #ED0742;
+  border-radius: 50%;
+}
+.custom-radio input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.custom-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.custom-radio .checkmark:after {
+ 	top: 5px;
+ 	left: 5px;
+ 	width: 8px;
+ 	height: 8px;
+ 	border-radius: 50%;
+ 	background: #ED0742;
+}
+.ghostWritingBg{
+  background-image: url(asserts/images/inner-bg-ghostwritting.png);
+}
+.innerbrilliant_mind_section{
+  background-image: url(asserts/images/inner-bg-large-img.png);
+}
+/* Inner Pages Css End */
+/* Usama Css End */
