@@ -48,7 +48,9 @@
   border-radius: 50px;
 }
 .inner-hero {
-  padding: 120px 0 0;
+  padding: 120px 0 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .inner-btn-group {
   display: flex;
@@ -158,7 +160,9 @@
  	background: #ED0742;
 }
 .ghostWritingBg{
-  background-image: url(asserts/images/inner-bg-ghostwritting.png);
+  /* background-image: url(asserts/images/inner-bg-ghostwritting.png); */
+  background-image: url(asserts/images/bgImage.png);
+  
 }
 
 /* Inner Pages Css End */

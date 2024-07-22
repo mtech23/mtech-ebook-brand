@@ -1146,7 +1146,10 @@ width: 60px;
 }
 
 .innerbrilliant_mind_section{
-  background-image: url(../../asserts/images/inner-bg-large-img.png);
+  /* background-image: url(../../asserts/images/inner-bg-large-img.png); */
+  background-image: url(../../asserts/images/inner-sec1-bg.png);
+  margin-top: unset;
+  padding-top: 150px;
 }
 
 
