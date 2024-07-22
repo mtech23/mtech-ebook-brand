@@ -31,12 +31,12 @@ const FaithWriter = () => {
 
         <Section2
         innerSec2Class="innerbrilliant_mind_section"
-          title="Trust Our "
-          subtitle="  Ghostwriters"
-          title2="For Your Voice!"
-          subtitle1="How we work?"
-          subtitle2="    Tailored Collaborations?"
-          subtitle3="  Expert Guidance"
+          title="Where Global Beliefs Find Their "
+          subtitle="  Literary Voice"
+          // title2="For Your Voice!"
+          // subtitle1="How we work?"
+          // subtitle2="    Tailored Collaborations?"
+          // subtitle3="  Expert Guidance"
           image={sec2img}
         />
 

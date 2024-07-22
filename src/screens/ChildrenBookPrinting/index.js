@@ -26,12 +26,12 @@ const ChildrenBookPrinting = () => {
 
         <Section2
           innerSec2Class="innerbrilliant_mind_section"
-          title="Trust Our "
-          subtitle=" Ghostwriters"
-          title2="For Your Voice!"
+          title="Every Page A Journey, Every Book "
+          subtitle=" An Adventure"
+          title2="For Children"
           subtitle1="How we work?"
-          subtitle2="    Tailored Collaborations?"
-          subtitle3="  Expert Guidance"
+          // subtitle2="    Tailored Collaborations?"
+          // subtitle3="  Expert Guidance"
           image={sec2img}
         />
 

@@ -30,12 +30,12 @@ const BookEditing = () => {
 
         <Section2
         innerSec2Class="innerbrilliant_mind_section"
-          title="Trust Our "
-          subtitle="  Ghostwriters"
-          title2="For Your Voice!"
+          title="Trust Random House   "
+          subtitle=" Publishers To Polish"
+          title2="Your Narrative"
           subtitle1="How we work?"
-          subtitle2="    Tailored Collaborations?"
-          subtitle3="  Expert Guidance"
+          // subtitle2="    Tailored Collaborations?"
+          // subtitle3="  Expert Guidance"
           image={sec2img}
         />
 

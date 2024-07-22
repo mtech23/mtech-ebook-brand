@@ -30,12 +30,12 @@ const BookTrailer = () => {
 
         <Section2
         innerSec2Class="innerbrilliant_mind_section"
-          title="Trust Our "
-          subtitle=" Ghostwriters"
-          title2="For Your Voice!"
+          title="Creating Hype For Your Book With An Excellent  "
+          subtitle=" Video Trailer"
+          // title2="For Your Voice!"
           subtitle1="How we work?"
-          subtitle2="    Tailored Collaborations?"
-          subtitle3="  Expert Guidance"
+          // subtitle2="    Tailored Collaborations?"
+          // subtitle3="  Expert Guidance"
           image={sec2img}
         />
 
