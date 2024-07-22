@@ -402,6 +402,14 @@
   position: relative;
   overflow: hidden;
 }
+.category_section2 {
+  /* background-image: url("../../asserts/images/ebook.png"); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 60px 0px 200px;
+  position: relative;
+  overflow: hidden;
+}
 .category_section .sec_title {
   text-align: center;
 }

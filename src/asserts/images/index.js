@@ -56,9 +56,11 @@ import dmcaImg from "./dmca.png";
 import paymentImg from "./payment.png";
 import footerBrandImgs from "./footer-brand-imgs.png";
 import userImg01 from "./user01.png";
-import userImg01 from "./";
+import sec2img from './sec2img.png'
+// import userImg01 from "./";
 
 export {
+  sec2img,
     chatIcon,
   heroImgLeft,
   brilliantBookImg,

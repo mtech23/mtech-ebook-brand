@@ -14,15 +14,25 @@ import {
   semi02,
   semi03,
   siteScrollImg,
+  sec2img
 } from "../../asserts/images";
 import InnerHero from "../../components/InnerHero";
+import Section2 from "../../components/Section2";
+import CustomCategory from "../../components/CustomCategory";
+import SecondCustomBanner from "../../components/SecondCustomBanner";
+import FirstCustomBanner from "../../components/FirstCustomBanner";
+import PublishBook from "../../components/PublishBook";
+import Testimonial from "../../components/Testimonial";
+import CustomPublication from "../../components/CustomPublication";
+import Faq from "../../components/Faq";
+import GetTouch from "../../components/GetTouch";
 
 const GhostWriter = () => {
   return (
     <>
       <UserLayout>
-      <InnerHero />
-        <section className="hero_section">
+        {/* <InnerHero /> */}
+        {/* <section className="hero_section">
           <div className="container-fluid position-relative">
             <div className="hero_response_first_img">
               <img src={heroImgLeft} alt="first"></img>
@@ -80,7 +90,7 @@ const GhostWriter = () => {
                   </div>
                   <div className="hero_btns">
                     <button className="btn_with_icon btn-red">
-                      {/* <img src={chatIcon} className="btn_with_icon_img" alt="" /> */}
+ 
                       <span className="btn_with_icon_text">Get a Quote</span>
                     </button>
                     <button className="btn_with_icon">
@@ -111,223 +121,22 @@ const GhostWriter = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section class="brilliant_mind_section">
-          <div className="polygonImg01">
-            <img draggable={false} src={polygon01} alt="polygon"></img>
-          </div>
+        <Section2 title="Trust Our " subtitle="  Ghostwriters" title2="For Your Voice!" subtitle1="How we work?"
+          subtitle2="    Tailored Collaborations?"
+          subtitle3="  Expert Guidance" 
+          image={sec2img}
+          />
 
-          <div className="polygonImg02">
-            <img draggable={false} src={polygon01} alt="polygon"></img>
-          </div>
-
-          <div className="container">
-            <div class="row">
-              <div class="col-sm-12 col-lg-6">
-                <div class="sec_title">
-                  <h2
-                    className=""
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="1000"
-                  >
-                    BRILLIANT<span class="color-red">MINDS PUBLISH</span> HERE
-                  </h2>
-                  <p
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s,
-                  </p>
-
-                  <p
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem.
-                  </p>
-
-                  <p
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem.
-                  </p>
-
-                  <p
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s,
-                  </p>
-                  <button
-                    type="submit"
-                    class="brand_btn"
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    Read More
-                  </button>
-                </div>
-              </div>
-
-              <div class="col-sm-12 col-lg-6">
-                <div className="book_main_box">
-                  <div className="book_semicircle_box">
-                    <div className="first_semi">
-                      <img draggable={false} src={semi01} alt="semi"></img>
-                    </div>
-
-                    <div className="second_semi">
-                      <img draggable={false} src={semi02} alt="semi"></img>
-                    </div>
-
-                    <div className="third_semi">
-                      <img draggable={false} src={semi03} alt="semi"></img>
-                    </div>
-
-                    <div className="circle_with_semi">
-                      <img
-                        draggable={false}
-                        src={redCirclewithSemi}
-                        alt="semi"
-                      ></img>
-                    </div>
-
-                    <div className="circle_with_semi2">
-                      <img
-                        draggable={false}
-                        src={redCirclewithSemi}
-                        alt="semi"
-                      ></img>
-                    </div>
-                  </div>
-
-                  <div
-                    class="text-center book_img position-relative"
-                    data-aos="fade-up"
-                    data-aos-offset="0"
-                    data-aos-duration="1000"
-                  >
-                    <img
-                      src={brilliantBookImg}
-                      className="img-fluid"
-                      alt=""
-                    ></img>
-
-                    <div className="redCircleBehindBook">
-                      <img
-                        draggable={false}
-                        src={redSemibehindBook}
-                        alt="red"
-                      ></img>
-                    </div>
-                  </div>
-
-                  <div>
-                    <img
-                      draggable={false}
-                      src={boxBelowImg}
-                      class="img-fluid"
-                      alt=""
-                    ></img>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="container-fluid p-0">
-            <div>
-              <div class="marquee-container trusted-partnerContainer">
-                <div class="marquee">
-                  <div class="trustedPartners">
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                    <div class="trustedPartner ">
-                      <img draggable={false} src={siteScrollImg} alt=""></img>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          <CustomCategory className="category_section2"/>
+          <FirstCustomBanner/>
+          <PublishBook/>
+          <Testimonial/>
+          <SecondCustomBanner/>
+          <CustomPublication/>
+          <Faq/>
+<GetTouch/>
       </UserLayout>
     </>
   );

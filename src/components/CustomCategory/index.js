@@ -1,16 +1,16 @@
 import React from 'react'
 import { A4book, categorybk, categoryIcon01, categoryIcon02, categoryIcon03, categoryIcon04, categoryIcon05, ImgUnderArc, polygon01 } from '../../asserts/images'
 
-const CustomCategory = () => {
+const CustomCategory = (props) => {
   return (
     <>
-           <section className="category_section">
-      <div className="category_polygonImg01">
-          <img draggable={false} src={polygon01} alt="polygon"></img>
-        </div>
-        <div className="category_bk">
-          <img draggable={false} src={categorybk} alt="bk"></img>
-        </div>
+           <section className={props.className}>
+      {props?.polygon01  && <div className="category_polygonImg01">
+          <img draggable={false} src={props?.polygon01} alt="polygon"></img>
+        </div>}
+{props?.image &&        <div className="category_bk">
+          <img draggable={false} src={props?.image} alt="bk"></img>
+        </div>}
 
         <div className="container">
           <div className="row">

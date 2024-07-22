@@ -565,7 +565,7 @@ const Home = () => {
 </div>
 </section> */}
 
-        <CustomCategory />
+        <CustomCategory  className={"category_section"} image={categorybk} polygon01={polygon01}/>
 
         {/* <section className="category_section">
 <div className="category_polygonImg01">
