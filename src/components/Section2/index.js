@@ -26,7 +26,7 @@ const Section2 = (props) => {
                 <div className="container">
                     <div class="row">
                         <div class="col-sm-12 col-lg-6">
-                            <div class="sec_title">
+                            <div class="sec_title custom_two_sec_title">
                                 <h2
                                     className=""
                                     data-aos="fade-right"

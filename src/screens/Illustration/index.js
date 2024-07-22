@@ -30,12 +30,12 @@ const Illustration = () => {
 
         <Section2
         innerSec2Class="innerbrilliant_mind_section"
-          title="Trust Our "
-          subtitle=" Ghostwriters"
-          title2="For Your Voice!"
+          title="Authors, Meet Your Visual  "
+          subtitle=" Storytellers"
+          // title2="For Your Voice!"
           subtitle1="How we work?"
-          subtitle2="    Tailored Collaborations?"
-          subtitle3="  Expert Guidance"
+          // subtitle2="    Tailored Collaborations?"
+          // subtitle3="  Expert Guidance"
           image={sec2img}
         />
 

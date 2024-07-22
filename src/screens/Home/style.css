@@ -751,6 +751,10 @@ audio::-webkit-media-controls-time-remaining-display {
   font-weight: 400;
   text-transform: uppercase;
 }
+.custom_two_sec_title h2 {
+
+  text-transform: capitalize;
+}
 .sec_title h3 {
   font-family: "Hind", sans-serif;
   font-size: 30px;
