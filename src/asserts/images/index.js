@@ -61,6 +61,19 @@ import innerBadge2 from "./inner-badge-2.png";
 import innerBadge3 from "./inner-badge-3.png";
 import saleBadge from "./sale-badge.png";
 import sec2img from "./sec2img.png";
+import bookPublishingImg2 from "./book-publishing-img2.png";
+import audioImg2 from "./audio-book-img2.png";
+import bookEditingImg2 from "./book-editing-img2.png";
+import bookMarketingImg2 from "./book-marketing-img2.png";
+import faithWriterImg2 from "./faith-writing-img2.png";
+import CoverDesignImg2 from "./cover-design-img2.png";
+import illustrationImg2 from "./illustration-img2.png";
+import childrenIllustrationImg2 from "./children-illustration-img2.png";
+import childrenBookPrintingImg2 from "./children-book-printing-img2.png";
+import websiteAuthorImg2 from "./website-author-img2.png";
+import commicIllustrationImg2 from "./commic-illustration-img2.png";
+import bookTrailerImg2 from "./book-trailer-img2.png";
+import bookTrailerVideo2 from "./book-trailer-video.mp4";
  
 export {
     chatIcon,
@@ -124,6 +137,19 @@ export {
 innerBadge2,
 innerBadge3,
 saleBadge,
-sec2img
+sec2img,
+bookPublishingImg2,
+audioImg2,
+bookEditingImg2,
+bookMarketingImg2,
+faithWriterImg2,
+CoverDesignImg2,
+illustrationImg2,
+childrenIllustrationImg2,
+childrenBookPrintingImg2,
+websiteAuthorImg2,
+commicIllustrationImg2,
+bookTrailerImg2,
+bookTrailerVideo2
 };
  

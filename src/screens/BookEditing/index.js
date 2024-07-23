@@ -13,7 +13,7 @@ import GetTouch from "../../components/GetTouch";
 
 import {
     
-    sec2img,
+    bookEditingImg2,
   } from "../../asserts/images";
 
 const BookEditing = () => {
@@ -22,7 +22,7 @@ const BookEditing = () => {
         <UserLayout>
 
         <InnerHero
-          innerheroclass="ghostWritingBg"
+          innerheroclass="bookEditingBg"
           title="Let Your Story Be Heard, Beautifully"
           subtitle=" Edited And Clear"
           para="Are you a passionate writer, pouring your heart and soul into making the perfect manuscript? At Random House Publishers, we understand the dedication it takes to bring your story to life. That's why we're proud to introduce our premier Book Editing Service, designed to raise your work to its highest potential."
@@ -36,7 +36,8 @@ const BookEditing = () => {
           subtitle1="How we work?"
           // subtitle2="    Tailored Collaborations?"
           // subtitle3="  Expert Guidance"
-          image={sec2img}
+          image={bookEditingImg2}
+          imgClass="bookEditingImg2"
         />
 
         <CustomCategory className="category_section2" />

@@ -13,7 +13,7 @@ import GetTouch from "../../components/GetTouch";
 
 import {
     
-    sec2img,
+    bookPublishingImg2,
   } from "../../asserts/images";
 
 const BookPublishing = () => {
@@ -22,7 +22,7 @@ const BookPublishing = () => {
         <UserLayout>
 
         <InnerHero
-          innerheroclass="ghostWritingBg"
+          innerheroclass="bookPublishingBg"
           title="Where Every Voice Finds Its Place In"
           subtitle=" Print"
           para="At Random House Publishers, we believe in the transformative power of words. Our legacy is built on a commitment to nurturing creativity, fostering diversity, and amplifying voices from every corner of the globe. With a rich history spanning decades, we've been at the forefront of the literary world, shaping the landscape of storytelling one book at a time."
@@ -36,7 +36,8 @@ const BookPublishing = () => {
           // subtitle1="How we work?"
           // subtitle2="    Tailored Collaborations?"
           // subtitle3="  Expert Guidance"
-          image={sec2img}
+          image={bookPublishingImg2}
+          imgClass="book-publishingImg2"
         />
 
         <CustomCategory className="category_section2" />

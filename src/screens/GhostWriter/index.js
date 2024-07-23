@@ -34,6 +34,7 @@ const GhostWriter = () => {
           subtitle2="    Tailored Collaborations?"
           subtitle3="  Expert Guidance"
           image={sec2img}
+          imgClass="ghost-img2"
         />
 
         <CustomCategory className="category_section2" />

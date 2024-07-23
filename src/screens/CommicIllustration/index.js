@@ -13,7 +13,7 @@ import GetTouch from "../../components/GetTouch";
 
 import {
     
-    sec2img,
+    commicIllustrationImg2,
   } from "../../asserts/images";
 
 const CommicIllustration = () => {
@@ -22,7 +22,7 @@ const CommicIllustration = () => {
         <UserLayout>
 
         <InnerHero
-          innerheroclass="ghostWritingBg"
+          innerheroclass="commicIllustrationBg"
           title="Supercharge Your Storyline With Our"
           subtitle=" Comic Creations!"
           para="We believe that every children's book deserves to come alive with vibrant characters that leap off the page and into the hearts of young readers. That's why we're proud to offer our excellent children's book illustration service, where imagination knows no bounds and creativity flourishes."
@@ -36,7 +36,8 @@ const CommicIllustration = () => {
           subtitle1="How we work?"
           // subtitle2="    Tailored Collaborations?"
           // subtitle3="  Expert Guidance"
-          image={sec2img}
+          image={commicIllustrationImg2}
+          imgClass="commicIllustrationImg2"
         />
 
         <CustomCategory className="category_section2" />

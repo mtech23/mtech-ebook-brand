@@ -1,5 +1,7 @@
 /* HEADER SECTION CSS START */
-
+body{
+  overflow-x: hidden;
+}
 .header_topbar {
   background-color: #ed0742;
   padding: 10px 0px;
@@ -323,7 +325,7 @@
   border-radius: 50%;
   transform: rotate(0deg);
   transition: transform 0.7s linear;
-  animation: rotate 7s infinite linear;
+  /* animation: rotate 7s infinite linear; */
   transform: translateX(-25%);
   display: flex;
   justify-content: center;
@@ -1164,3 +1166,63 @@ width: 60px;
   margin-top: 8px;
   border-radius: 10px;
 } */
+
+
+ /* media queries start */
+@media (max-width:1024px){
+  .publicationBook1 {
+    width: 91%;
+}
+.publicationBook2 {
+    width: 74%;
+    left: -15%;
+}
+.numbering {
+  font-size: 20px;
+}
+.faqs_sec .card_btn_content {
+  font-size: 12px;
+}
+.faqs_sec .accordion-body {
+  font-size: 12px;
+}
+.footer_subhead {
+  font-size: 18px;
+ 
+}
+.banner_left_img img,
+.banner_right_img img {
+  width: 87%;
+}
+.audio_player {
+  bottom: 186px;
+}
+}
+@media (max-width: 600px) {
+  .brilliant_mind_section {
+      
+    padding: 593px 0px 723px !important
+  }
+  .custom_margin_class{
+    margin-top: -114px;
+  }
+}
+@media (max-width:425px){
+  .sec_title {
+    padding: 10px 0;
+}
+.btn-bg-white {
+  background-size: 100% 100%;
+  font-size: 12px;
+}
+.btn-bg-red {
+  font-size: 12px;
+}
+.sec_title p {
+  font-size: 11px !important;
+}
+.faqs_sec {
+  padding: 45px 0 100px;
+}
+}
+/* media queries end */

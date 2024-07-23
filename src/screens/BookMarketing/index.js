@@ -13,7 +13,7 @@ import GetTouch from "../../components/GetTouch";
 
 import {
     
-    sec2img,
+    bookMarketingImg2,
   } from "../../asserts/images";
 
 const BookMarketing = () => {
@@ -22,7 +22,7 @@ const BookMarketing = () => {
         <UserLayout>
 
         <InnerHero
-          innerheroclass="ghostWritingBg"
+          innerheroclass="bookMarketingBg"
           title="Reach Readers Everywhere Our Book Marketing Service"
           subtitle=" Makes It Happen!"
           para="Our Book Marketing service is designed to catapult your literary masterpiece into the spotlight it deserves. With a personalized approach to each author and their work, we employ strategic marketing tactics that resonate with readers across various platforms. From engaging social media campaigns to targeted email newsletters and innovative promotional events, we ensure your book "
@@ -36,7 +36,8 @@ const BookMarketing = () => {
           // subtitle1="How we work?"
           // subtitle2="    Tailored Collaborations?"
           // subtitle3="  Expert Guidance"
-          image={sec2img}
+          image={bookMarketingImg2}
+          imgClass="bookMarketingImg2"
         />
 
         <CustomCategory className="category_section2" />

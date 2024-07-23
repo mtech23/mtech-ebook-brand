@@ -13,7 +13,7 @@ import GetTouch from "../../components/GetTouch";
 
 import {
     
-    sec2img,
+    faithWriterImg2,
   } from "../../asserts/images";
 
 const FaithWriter = () => {
@@ -22,7 +22,7 @@ const FaithWriter = () => {
         <UserLayout>
 
         <InnerHero
-          innerheroclass="ghostWritingBg"
+          innerheroclass="faithWritingBg"
           title="Writing The Next Chapter Of Faith Your"
           subtitle=" Religious "
           title2="Book Starts Here"
@@ -37,7 +37,8 @@ const FaithWriter = () => {
           // subtitle1="How we work?"
           // subtitle2="    Tailored Collaborations?"
           // subtitle3="  Expert Guidance"
-          image={sec2img}
+          image={faithWriterImg2}
+          imgClass="faithWriterImg2"
         />
 
         <CustomCategory className="category_section2" />

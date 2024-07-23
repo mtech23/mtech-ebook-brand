@@ -1,11 +1,8 @@
-
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 
 @keyframes App-logo-spin {
   from {
@@ -16,12 +13,11 @@
   }
 }
 
-
 /* Usama Css Start */
 /* Inner Pages Css Start */
-.btn-bg-white{
+.btn-bg-white {
   background-image: url(asserts/images/btn-bgg-white.png);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -33,7 +29,7 @@
   padding: 10px 30px;
   border-radius: 50px;
 }
-.btn-bg-red{
+.btn-bg-red {
   background-image: url(asserts/images/btn-bgg-red.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -136,7 +132,7 @@
   height: 20px;
   width: 20px;
   background-color: transparent;
-  border: 1px solid #ED0742;
+  border: 1px solid #ed0742;
   border-radius: 50%;
 }
 .custom-radio input:checked ~ .checkmark {
@@ -152,18 +148,132 @@
   display: block;
 }
 .custom-radio .checkmark:after {
- 	top: 5px;
- 	left: 5px;
- 	width: 8px;
- 	height: 8px;
- 	border-radius: 50%;
- 	background: #ED0742;
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ed0742;
 }
-.ghostWritingBg{
+.ghostWritingBg {
   /* background-image: url(asserts/images/inner-bg-ghostwritting.png); */
   background-image: url(asserts/images/bgImage.png);
-  
+}
+.faithWritingBg {
+  background-image: url(asserts/images/faith-writer-hero-bg.png);
+}
+.bookEditingBg {
+  background-image: url(asserts/images/book-editing-hero-bg.png);
+}
+.bookPublishingBg {
+  background-image: url(asserts/images/book-publishing-hero-bg.png);
+}
+.bookMarketingBg {
+  background-image: url(asserts/images/book-marketing-hero-bg.png);
+}
+.coverDesignBg {
+  background-image: url(asserts/images/cover-design-hero-bg.png);
+}
+.audioBookDesignBg {
+  background-image: url(asserts/images/audio-book-design-hero-bg.png);
+}
+.bookTrailerBg {
+  background-image: url(asserts/images/book-trailer-hero-bg.png);
+}
+.illustrationBg {
+  background-image: url(asserts/images/illustration-hero-bg.png);
+}
+.childrenIllustrationBg {
+  background-image: url(asserts/images/children-illustration-hero-bg.png);
+}
+.childrenBookPrintingBg {
+  background-image: url(asserts/images/children-book-printing-hero-bg.png);
+}
+.websiteAuthorBg {
+  background-image: url(asserts/images/website-author-hero-bg.png);
+}
+.commicIllustrationBg {
+  background-image: url(asserts/images/commic-illustration-hero-bg.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+.ghost-img2 {
+  transform: scale(1.5) translateY(10px);
+}
+.book-publishingImg2 {
+  transform: scale(2.2) translate(-44px, 21px);
+}
+.audioImg2 {
+  transform: scale(1.5) translate(-20px, 20px);
+}
+.bookEditingImg2 {
+  transform: scale(1.3);
+}
+.bookMarketingImg2 {
+  transform: scale(2) translate(-40px, 1px);
+}
+.faithWriterImg2 {
+  transform: scale(2.6) translate(-40px, 17px);
+}
+.illustrationImg2 {
+  transform: scale(1.5) translate(0px, -31px);
+}
+.childrenIllustrationImg2 {
+  transform: scale(1.5);
+}
+.childrenBookPrintingImg2 {
+  transform: scale(1.2) translate(0px, 10px);
+}
+.websiteAuthorImg2 {
+  transform: scale(1.3) translate(-20px, 46px);
+  width: 100% !important;
+}
+.commicIllustrationImg2 {
+  transform: scale(1) translate(-20px, 50px);
+  width: 80% !important;
+}
+.bookTrailerImg2 {
+  transform: scale(2.2) translate(-44px, 21px);
+}
+.CoverDesignImg2 {
+  transform: scale(1.1);
 }
 
 /* Inner Pages Css End */
 /* Usama Css End */
+
+/* media queries start */
+
+@media (max-width:1280px){
+  .inner-hero_badges {
+    justify-content: center;
+    gap: 12px;
+}
+.inner-hero_badges img {
+  max-width: 107px;
+}
+.inner-hero_form_title {
+  font-size: 18px;
+}
+.inner-hero_form_subtitle {
+  font-size: 17px;
+}
+.banner_left_img img,
+.banner_right_img img {
+  width: 87%;
+}
+}
+@media (max-width:1024px){
+
+}
+
+/* media queries end */

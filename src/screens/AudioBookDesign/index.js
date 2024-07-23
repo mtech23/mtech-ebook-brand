@@ -12,7 +12,7 @@ import Faq from "../../components/Faq";
 import GetTouch from "../../components/GetTouch";
 
 import { 
-    sec2img,
+    audioImg2,
   } from "../../asserts/images";
 
 const AudioBookDesign = () => {
@@ -21,7 +21,7 @@ const AudioBookDesign = () => {
         <UserLayout>
 
         <InnerHero
-          innerheroclass="ghostWritingBg"
+          innerheroclass="audioBookDesignBg"
           title="Listen To Your Favorite Reads"
           subtitle=" Anywhere, Anytime!"
           para="Welcome to a world where stories come alive through the magic of audio! At Random House Publishers, we understand the joy of getting lost in a charming story. That's why we've brought your favorite reads to life in a whole new way – through our extensive collection of audiobooks. With Random House Publishers' Audio Books, you can dive into the enchanting realms of your most"
@@ -35,7 +35,8 @@ const AudioBookDesign = () => {
           subtitle1="How we work?"
           // subtitle2="    Tailored Collaborations?"
           // subtitle3="  Expert Guidance"
-          image={sec2img}
+          image={audioImg2}
+          imgClass="audioImg2"
         />
 
         <CustomCategory className="category_section2" />

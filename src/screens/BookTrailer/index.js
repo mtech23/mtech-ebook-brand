@@ -13,7 +13,8 @@ import GetTouch from "../../components/GetTouch";
 
 import {
     
-    sec2img,
+    bookTrailerImg2,
+    bookTrailerVideo2
   } from "../../asserts/images";
 
 const BookTrailer = () => {
@@ -22,7 +23,7 @@ const BookTrailer = () => {
         <UserLayout>
 
         <InnerHero
-          innerheroclass="ghostWritingBg"
+          innerheroclass="bookTrailerBg"
           title="Experience The Essence Of Your Book In A "
           subtitle=" Cinematic Journey"
           para="Experience the essence of your favorite book in a fascinating cinematic journey with our Book Trailer service. Transporting you into the heart of the story, this dynamic trailer explains like a mini-movie, teasing the plot, introducing vibrant characters, and immersing you in the rich tapestry of the story's world. Through expertly made visuals and emotive musiC."
@@ -36,7 +37,10 @@ const BookTrailer = () => {
           subtitle1="How we work?"
           // subtitle2="    Tailored Collaborations?"
           // subtitle3="  Expert Guidance"
-          image={sec2img}
+          image={bookTrailerImg2} 
+          imgClass="bookTrailerImg2"
+          // video={bookTrailerVideo2}
+          // videoClass="tabletVideo"
         />
 
         <CustomCategory className="category_section2" />

@@ -1,9 +1,9 @@
 import React from 'react'
 import { dmcaImg, facebookIcon, footerBrandImgs, instagramIcon, paymentImg, twitterIcon, youtubeIcon } from '../../../asserts/images'
 import { Link } from 'react-router-dom'
-
+ 
 const Footer = () => {
-
+ 
     const titles = [
         "PR Publication",
         "Book Publishing",
@@ -15,7 +15,7 @@ const Footer = () => {
         "Children's Book Editing",
         "Proofreading Editing"
       ];
-
+ 
       const ghostServices = [
         "business books",
         "Nonfiction",
@@ -31,7 +31,7 @@ const Footer = () => {
         "Hip Hop Ghostwriters",
         "Article Writing"
       ];
-
+ 
       const bookMarketings = [
         "Book Cover Design",
         "Audio Book",
@@ -42,7 +42,7 @@ const Footer = () => {
         "Ebook Social Media Marketing",
         "EBook SEO"
       ];
-
+ 
   return (
     <>
          <section className="footer">
@@ -54,7 +54,7 @@ const Footer = () => {
                   <div className="col-md-12">
                     <div className="footer_social">
                       <div className="footer_social_item">
-                            
+                           
                         <Link>
                         <img
                             draggable={false}
@@ -63,14 +63,14 @@ const Footer = () => {
                             alt=""
                           />
                         </Link>
-
+ 
                         <div className="footer_social_text">
                           <p>
                             Followers <br />
                             <b>10K</b>
                           </p>
                         </div>
-
+ 
                       </div>
                       <div className="footer_social_item">
                             <Link>
@@ -81,7 +81,7 @@ const Footer = () => {
                                     alt=""
                                 />
                             </Link>
-                      
+                     
                         <div className="footer_social_text">
                           <p>
                             Followers <br />
@@ -90,7 +90,7 @@ const Footer = () => {
                         </div>
                       </div>
                       <div className="footer_social_item">
-
+ 
                             <Link>
                                 <img
                                     draggable={false}
@@ -99,7 +99,7 @@ const Footer = () => {
                                     alt=""
                                 />
                             </Link>
-
+ 
                         <div className="footer_social_text">
                           <p>
                             Followers <br />
@@ -108,7 +108,7 @@ const Footer = () => {
                         </div>
                       </div>
                       <div className="footer_social_item">
-
+ 
                             <Link>
                                 <img
                                     draggable={false}
@@ -117,7 +117,7 @@ const Footer = () => {
                                     alt=""
                                 />
                             </Link>
-
+ 
                         <div className="footer_social_text">
                           <p>
                             Followers <br />
@@ -134,9 +134,9 @@ const Footer = () => {
                         Ghostwriting <br />
                         Services
                       </h3>
-
-                      {/* <ul className="footer_links">
-
+ 
+                      <ul className="footer_links">
+ 
                         <li className="footer_link">
                             <Link>business books</Link>
                         </li>
@@ -160,12 +160,12 @@ const Footer = () => {
                          
                         </li>
                         <li className="footer_link">
-                        <Link>Christian- Faith</Link>
-                          
+                        <Link to="faithfaith-writer">Christian- Faith</Link>
+                         
                         </li>
                         <li className="footer_link">
                             <Link>Drama Writing</Link>
-                          
+                         
                         </li>
                         <li className="footer_link">
                             <Link>eBook Writing</Link>
@@ -173,28 +173,28 @@ const Footer = () => {
                         </li>
                         <li className="footer_link">
                             <Link>Horror Writing</Link>
-                        
+                       
                         </li>
                         <li className="footer_link">
                             <Link>Hip Hop Ghostwriters</Link>
-                        
+                       
                         </li>
                         <li className="footer_link">
                             <Link>Article Writing</Link>
-                        
+                       
                         </li>
-                      </ul> */}
-
+                      </ul>
+ 
                       <ul className="footer_links">
-                        {
+                        {/* {
                             ghostServices.map((ghostservice, index) => (
                                 <li key={index} className="footer_link">
                                 <Link>{ghostservice}</Link>
                                 </li>
                             ))
-                        }
+                        } */}
                       </ul>
-
+ 
                     </div>
                   </div>
                   <div className="col-md-4">
@@ -202,46 +202,46 @@ const Footer = () => {
                       <h3 className="footer_subhead">
                         Publishing & <br /> Editing
                       </h3>
-
-                      {/* <ul className="footer_links">
-                        <li className="footer_link">
-                          <Link to="javascript">PR Publication</Link>
-                        </li>
-                        <li className="footer_link">
-                          <Link to="javascript">Book Publishing</Link>
-                        </li>
-                        <li className="footer_link">
-                          <Link to="javascript">Printing Books</Link>
-                        </li>
-                        <li className="footer_link">
-                          <Link to="javascript">Self-Help Publishing Amazon</Link>
-                        </li>
-                        <li className="footer_link">
-                          <Link to="javascript">Amazon Printing</Link>
-                        </li>
-                        <li className="footer_link">
-                          <Link to="javascript">Book Formatting</Link>
-                        </li>
-                        <li className="footer_link">
-                          <Link to="javascript">Book Review Template</Link>
-                        </li>
-                        <li className="footer_link">
-                          <Link to="javascript">Children's Book Editing</Link>
-                        </li>
-                        <li className="footer_link">
-                          <Link to="javascript">Proofreading Editing</Link>
-                        </li>
-                      </ul> */}
-
+ 
                       <ul className="footer_links">
+                        <li className="footer_link">
+                          <Link to="/">PR Publication</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/">Book Publishing</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/">Printing Books</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/">Self-Help Publishing Amazon</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/">Amazon Printing</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/">Book Formatting</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/">Book Review Template</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/children-illustration">Children's Book Editing</Link>
+                        </li>
+                        <li className="footer_link">
+                          <Link to="/">Proofreading Editing</Link>
+                        </li>
+                      </ul>
+ 
+                      {/* <ul className="footer_links">
                         {titles.map((title, index) => (
                             <li key={index} className="footer_link">
                             <Link>{title}</Link>
                             </li>
                         ))}
-                        </ul>
-
-
+                        </ul> */}
+ 
+ 
                     </div>
                   </div>
                   <div className="col-md-4">
@@ -250,7 +250,7 @@ const Footer = () => {
                         Book Marketing and
                         <br /> Production
                       </h3>
-
+ 
                       <ul className="footer_links">
                         <li className="footer_link">
                           <Link to="/cover-design">Book Cover Design</Link>
@@ -262,22 +262,22 @@ const Footer = () => {
                           <Link to="/illustration">Illustrations</Link>
                         </li>
                         <li className="footer_link">
-                          <Link to="javascript">Author Logo Design</Link>
+                          <Link to="/">Author Logo Design</Link>
                         </li>
                         <li className="footer_link">
                           <Link to="/website-author">Author E-Commerce Website</Link>
                         </li>
                         <li className="footer_link">
-                          <Link to="javascript">Book Video</Link>
+                          <Link to="/">Book Video</Link>
                         </li>
                         <li className="footer_link">
-                          <Link to="javascript">Ebook Social Media Marketing</Link>
+                          <Link to="/">Ebook Social Media Marketing</Link>
                         </li>
                         <li className="footer_link">
-                          <Link to="javascript">EBook SEO</Link>
+                          <Link to="/">EBook SEO</Link>
                         </li>
                       </ul>
-
+ 
                       {/* <ul className="footer_links">
                         {
                             bookMarketings.map((bookmarketing, index) => (
@@ -287,8 +287,8 @@ const Footer = () => {
                             ))
                         }
                       </ul> */}
-
-
+ 
+ 
                     </div>
                   </div>
                 </div>
@@ -364,5 +364,5 @@ const Footer = () => {
     </>
   )
 }
-
+ 
 export default Footer
