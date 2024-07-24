@@ -12,7 +12,7 @@ const InnerHero = (props) => {
     <section className={`inner-hero ${props?.innerheroclass}`}>
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <div className="inner-hero_content">
               <div className="sec_title">
                 <h2>
@@ -20,9 +20,7 @@ const InnerHero = (props) => {
                   <span class="color-red">{props?.subtitle}</span>
                   {props?.title2}
                 </h2>
-                <p>
-                  {props?.para}
-                </p>
+                <p>{props?.para}</p>
                 <div class="inner-btn-group">
                   <button className="btn-bg-white">
                     Let’s Discuss Project
@@ -32,7 +30,7 @@ const InnerHero = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <div className="inner-hero_badges">
               <img src={innerBadge1} alt="" />
               <img src={innerBadge2} alt="" />
@@ -109,21 +107,21 @@ const InnerHero = (props) => {
                       <span class="checkmark"></span>
                     </label>
                   </div>
-                  <div className="col-lg-6 mb-3">
+                  <div className="col-md-6 mb-3">
                     <input
                       type="text"
                       class="form-control"
                       placeholder="Name"
                     />
                   </div>
-                  <div className="col-lg-6 mb-3">
+                  <div className="col-md-6 mb-3">
                     <input
                       type="tel"
                       class="form-control"
                       placeholder="Phone"
                     />
                   </div>
-                  <div className="col-lg-12 mb-3">
+                  <div className="col-md-12 mb-3">
                     <input
                       type="email"
                       class="form-control"

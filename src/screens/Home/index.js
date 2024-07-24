@@ -74,7 +74,6 @@ import PublishBook from "../../components/PublishBook";
 import Partners from "../../components/Partners";
 
 const Home = () => {
-  
   return (
     <>
       <UserLayout>
@@ -169,7 +168,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section class="brilliant_mind_section">
+        <section class="brilliant_mind_section brilliant_mind_HomeSection">
           <div className="polygonImg01">
             <img draggable={false} src={polygon01} alt="polygon"></img>
           </div>
@@ -178,140 +177,143 @@ const Home = () => {
             <img draggable={false} src={polygon01} alt="polygon"></img>
           </div>
 
-          <div className="container">
-            <div class="row">
-              <div class="col-sm-12 col-lg-6">
-                <div class="sec_title">
-                  <h2
-                    className=""
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="1000"
-                  >
-                    BRILLIANT<span class="color-red"> MINDS PUBLISH </span> HERE
-                  </h2>
-                  <p
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s,
-                  </p>
+          <section className="sec2_about">
+            <div className="container">
+              <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                  <div class="sec_title">
+                    <h2
+                      className=""
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="1000"
+                    >
+                      BRILLIANT<span class="color-red"> MINDS PUBLISH </span>{" "}
+                      HERE
+                    </h2>
+                    <p
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="2000"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s,
+                    </p>
 
-                  <p
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem.
-                  </p>
+                    <p
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="2000"
+                    >
+                      when an unknown printer took a galley of type and
+                      scrambled it to make a type specimen book. It has survived
+                      not only five centuries, but also the leap into electronic
+                      typesetting, remaining essentially unchanged. It was
+                      popularised in the 1960s with the release of Letraset
+                      sheets containing Lorem.
+                    </p>
 
-                  <p
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was
-                    popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem.
-                  </p>
+                    <p
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="2000"
+                    >
+                      when an unknown printer took a galley of type and
+                      scrambled it to make a type specimen book. It has survived
+                      not only five centuries, but also the leap into electronic
+                      typesetting, remaining essentially unchanged. It was
+                      popularised in the 1960s with the release of Letraset
+                      sheets containing Lorem.
+                    </p>
 
-                  <p
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s,
-                  </p>
-                  <button
-                    type="submit"
-                    class="brand_btn"
-                    data-aos="fade-right"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    Read More
-                  </button>
+                    <p
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="2000"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s,
+                    </p>
+                    <button
+                      type="submit"
+                      class="brand_btn"
+                      data-aos="fade-right"
+                      data-aos-offset="0"
+                      data-aos-duration="2000"
+                    >
+                      Read More
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-sm-12 col-lg-6">
-                <div className="book_main_box">
-                  <div className="book_semicircle_box">
-                    <div className="first_semi">
-                      <img draggable={false} src={semi01} alt="semi"></img>
+                <div class="col-sm-12 col-lg-6">
+                  <div className="book_main_box">
+                    <div className="book_semicircle_box">
+                      <div className="first_semi">
+                        <img draggable={false} src={semi01} alt="semi"></img>
+                      </div>
+
+                      <div className="second_semi">
+                        <img draggable={false} src={semi02} alt="semi"></img>
+                      </div>
+
+                      <div className="third_semi">
+                        <img draggable={false} src={semi03} alt="semi"></img>
+                      </div>
+
+                      <div className="circle_with_semi">
+                        <img
+                          draggable={false}
+                          src={redCirclewithSemi}
+                          alt="semi"
+                        ></img>
+                      </div>
+
+                      <div className="circle_with_semi2">
+                        <img
+                          draggable={false}
+                          src={redCirclewithSemi}
+                          alt="semi"
+                        ></img>
+                      </div>
                     </div>
 
-                    <div className="second_semi">
-                      <img draggable={false} src={semi02} alt="semi"></img>
+                    <div
+                      class="text-center book_img position-relative"
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="1000"
+                    >
+                      <img
+                        src={brilliantBookImg}
+                        className="img-fluid"
+                        alt=""
+                      ></img>
+
+                      <div className="redCircleBehindBook">
+                        <img
+                          draggable={false}
+                          src={redSemibehindBook}
+                          alt="red"
+                        ></img>
+                      </div>
                     </div>
 
-                    <div className="third_semi">
-                      <img draggable={false} src={semi03} alt="semi"></img>
-                    </div>
-
-                    <div className="circle_with_semi">
+                    <div>
                       <img
                         draggable={false}
-                        src={redCirclewithSemi}
-                        alt="semi"
+                        src={boxBelowImg}
+                        class="img-fluid innerBoxBelowImg"
+                        alt=""
                       ></img>
                     </div>
-
-                    <div className="circle_with_semi2">
-                      <img
-                        draggable={false}
-                        src={redCirclewithSemi}
-                        alt="semi"
-                      ></img>
-                    </div>
-                  </div>
-
-                  <div
-                    class="text-center book_img position-relative"
-                    data-aos="fade-up"
-                    data-aos-offset="0"
-                    data-aos-duration="1000"
-                  >
-                    <img
-                      src={brilliantBookImg}
-                      className="img-fluid"
-                      alt=""
-                    ></img>
-
-                    <div className="redCircleBehindBook">
-                      <img
-                        draggable={false}
-                        src={redSemibehindBook}
-                        alt="red"
-                      ></img>
-                    </div>
-                  </div>
-
-                  <div>
-                    <img
-                      draggable={false}
-                      src={boxBelowImg}
-                      class="img-fluid"
-                      alt=""
-                    ></img>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
           <Partners />
         </section>
@@ -565,7 +567,11 @@ const Home = () => {
 </div>
 </section> */}
 
-        <CustomCategory  className={"category_section"} image={categorybk} polygon01={polygon01}/>
+        <CustomCategory
+          className={"category_section"}
+          image={categorybk}
+          polygon01={polygon01}
+        />
 
         {/* <section className="category_section">
 <div className="category_polygonImg01">
@@ -826,7 +832,7 @@ const Home = () => {
               </div>
             </div>
             <div class="row process_rows">
-              <div class="col-sm-10 col-lg-5 mx-auto">
+              <div class="col-sm-12 col-lg-5 mx-auto">
                 <div
                   class="process_content"
                   data-aos="fade-up"
@@ -872,7 +878,7 @@ const Home = () => {
               </div>
             </div>
             <div class="row process_rows">
-              <div class="col-sm-10 col-lg-5 mx-auto">
+              <div class="col-sm-12 col-lg-5 mx-auto">
                 <div
                   class="process_content"
                   data-aos="fade-up"
@@ -920,7 +926,7 @@ const Home = () => {
               </div>
             </div>
             <div class="row process_rows">
-              <div class="col-lg-5 col-sm-10 mx-auto">
+              <div class="col-lg-5 col-sm-12 mx-auto">
                 <div
                   class="process_content"
                   data-aos="fade-up"
@@ -967,7 +973,7 @@ const Home = () => {
             </div>
 
             <div class="row process_rows">
-              <div class="col-lg-5 col-sm-10 mx-auto">
+              <div class="col-lg-5 col-sm-12 mx-auto">
                 <div
                   class="process_content"
                   data-aos="fade-up"
@@ -1052,8 +1058,8 @@ const Home = () => {
   <img draggable={false} src={banner2imgRight} alt=""></img>
 </div>
 </section> */}
-          
-          <PublishBook />
+
+        <PublishBook />
         {/* <section className="publish_book_sec">
           <img src={polygon01} className="publish_polygon" alt="polygon" />
           <img src={polygon03} className="publish_polygon_3" alt="polygon" />
@@ -1152,7 +1158,7 @@ const Home = () => {
         <section className="progress_sec">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-4 col-sm-10 mx-auto">
+              <div className="col-lg-4 col-sm-10 mx-auto process-m">
                 <div className="progress_item">
                   <div className="sec_title">
                     <h2>
@@ -1162,7 +1168,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-sm-10 mx-auto">
+              <div className="col-lg-4 col-sm-10 mx-auto process-m">
                 <div className="progress_item">
                   <div className="sec_title">
                     <h2>
@@ -1172,7 +1178,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-sm-10 mx-auto">
+              <div className="col-lg-4 col-sm-10 mx-auto process-m">
                 <div className="progress_item">
                   <div className="sec_title">
                     <h2>

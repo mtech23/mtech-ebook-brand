@@ -1,16 +1,19 @@
-import React from 'react'
-import { getTouchBook } from '../../asserts/images'
+import React from "react";
+import { getTouchBook } from "../../asserts/images";
 
 const GetTouch = () => {
   return (
     <>
-          <section class="get_touch_sec">
+      <section class="get_touch_sec">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4 col-sm-10 mx-auto">
-              <div class="get_touch_img" data-aos="fade-right"
+            <div class="col-lg-4 col-md-10 mx-auto">
+              <div
+                class="get_touch_img"
+                data-aos="fade-right"
                 data-aos-offset="0"
-                data-aos-duration="1000">
+                data-aos-duration="1000"
+              >
                 <img
                   draggable={false}
                   src={getTouchBook}
@@ -19,12 +22,14 @@ const GetTouch = () => {
                 />
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-md-6">
               <div class="get_touch_title">
                 <div class="sec_title">
-                  <h2 data-aos="fade-up"
-                data-aos-offset="0"
-                data-aos-duration="2000">
+                  <h2
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
                     TO BE
                     <br />
                     DESIGNED!
@@ -32,7 +37,7 @@ const GetTouch = () => {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-md-6">
               <div class="get_touch_form">
                 <form>
                   <div class="mb-3">
@@ -72,7 +77,7 @@ const GetTouch = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default GetTouch
+export default GetTouch;

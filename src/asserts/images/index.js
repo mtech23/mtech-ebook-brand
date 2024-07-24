@@ -8,7 +8,7 @@ import leatherImg from "./Group 1171276095.png";
 import polygon01 from "./Polygon1.png";
 import polygon03 from "./Polygon3.png";
 import chatIcon from "./chaticon.png";
- 
+
 import semi01 from "./semi1.png";
 import semi02 from "./semi2.png";
 import semi03 from "./semi3.png";
@@ -74,9 +74,18 @@ import websiteAuthorImg2 from "./website-author-img2.png";
 import commicIllustrationImg2 from "./commic-illustration-img2.png";
 import bookTrailerImg2 from "./book-trailer-img2.png";
 import bookTrailerVideo2 from "./book-trailer-video.mp4";
- 
+
+import testImg1 from "./test-img1.png";
+import testImg2 from "./test-img2.png";
+import testImg3 from "./test-img3.png";
+import testImg4 from "./test-img4.png";
+import testImg5 from "./test-img5.png";
+import testImg6 from "./test-img6.png";
+import testImg7 from "./test-img7.png";
+import testImg8 from "./test-img8.png";
+
 export {
-    chatIcon,
+  chatIcon,
   heroImgLeft,
   brilliantBookImg,
   boxBelowImg,
@@ -134,22 +143,29 @@ export {
   footerBrandImgs,
   userImg01,
   innerBadge1,
-innerBadge2,
-innerBadge3,
-saleBadge,
-sec2img,
-bookPublishingImg2,
-audioImg2,
-bookEditingImg2,
-bookMarketingImg2,
-faithWriterImg2,
-CoverDesignImg2,
-illustrationImg2,
-childrenIllustrationImg2,
-childrenBookPrintingImg2,
-websiteAuthorImg2,
-commicIllustrationImg2,
-bookTrailerImg2,
-bookTrailerVideo2
+  innerBadge2,
+  innerBadge3,
+  saleBadge,
+  sec2img,
+  bookPublishingImg2,
+  audioImg2,
+  bookEditingImg2,
+  bookMarketingImg2,
+  faithWriterImg2,
+  CoverDesignImg2,
+  illustrationImg2,
+  childrenIllustrationImg2,
+  childrenBookPrintingImg2,
+  websiteAuthorImg2,
+  commicIllustrationImg2,
+  bookTrailerImg2,
+  bookTrailerVideo2,
+  testImg1,
+  testImg2,
+  testImg3,
+  testImg4,
+  testImg5,
+  testImg6,
+  testImg7,
+  testImg8,
 };
- 
