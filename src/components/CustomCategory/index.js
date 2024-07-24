@@ -19,7 +19,7 @@ const CustomCategory = (props) => {
                 <h2 data-aos="fade-up"
                 data-aos-offset="0"
                 data-aos-duration="1000">
-                  <span class="color-red">Categories </span> We Cater for
+                  <span class="color-red"> Categories </span> We Cater for
                   <span class="color-red"> Authors</span>
                 </h2>
               </div>

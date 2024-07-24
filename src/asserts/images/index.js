@@ -74,6 +74,15 @@ import websiteAuthorImg2 from "./website-author-img2.png";
 import commicIllustrationImg2 from "./commic-illustration-img2.png";
 import bookTrailerImg2 from "./book-trailer-img2.png";
 import bookTrailerVideo2 from "./book-trailer-video.mp4";
+
+import testImg1 from "./test-img1.png";
+import testImg2 from "./test-img2.png";
+import testImg3 from "./test-img3.png";
+import testImg4 from "./test-img4.png";
+import testImg5 from "./test-img5.png";
+import testImg6 from "./test-img6.png";
+import testImg7 from "./test-img7.png";
+import testImg8 from "./test-img8.png";
  
 export {
     chatIcon,
@@ -150,6 +159,14 @@ childrenBookPrintingImg2,
 websiteAuthorImg2,
 commicIllustrationImg2,
 bookTrailerImg2,
-bookTrailerVideo2
+bookTrailerVideo2,
+testImg1,
+testImg2,
+testImg3,
+testImg4,
+testImg5,
+testImg6,
+testImg7,
+testImg8
 };
  

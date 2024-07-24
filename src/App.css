@@ -196,6 +196,13 @@
   background-image: url(asserts/images/commic-illustration-hero-bg.png);
 }
 
+.first_category_detail .category_detail_title {
+  transition: all 0.25s;
+}
+.first_category_detail:hover .category_detail_title {
+  color: red;
+  font-weight: 900;
+}
 
 
 

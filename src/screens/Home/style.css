@@ -408,7 +408,8 @@ body{
   /* background-image: url("../../asserts/images/ebook.png"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 60px 0px 200px;
+  /* padding: 60px 0px 200px; */
+  padding: 60px 0px 50px;
   position: relative;
   overflow: hidden;
 }
@@ -731,7 +732,7 @@ body{
 .audio_player {
   max-width: 300px;
   position: absolute;
-  bottom: 100px;
+  bottom: 150px;
   right: 0;
   z-index: 9999;
 }
@@ -1194,17 +1195,17 @@ width: 60px;
 .banner_right_img img {
   width: 87%;
 }
-.audio_player {
+/* .audio_player {
   bottom: 186px;
-}
+} */
 }
 @media (max-width: 600px) {
-  .brilliant_mind_section {
+  /* .brilliant_mind_section {
       
     padding: 593px 0px 723px !important
-  }
+  } */
   .custom_margin_class{
-    margin-top: -114px;
+    margin-top: -203px;
   }
 }
 @media (max-width:425px){
