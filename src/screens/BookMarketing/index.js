@@ -1,5 +1,5 @@
-import React from 'react'
-import UserLayout from '../../components/Layout/UserLayout'
+import React from "react";
+import UserLayout from "../../components/Layout/UserLayout";
 import InnerHero from "../../components/InnerHero";
 import Section2 from "../../components/Section2";
 import CustomCategory from "../../components/CustomCategory";
@@ -11,16 +11,12 @@ import CustomPublication from "../../components/CustomPublication";
 import Faq from "../../components/Faq";
 import GetTouch from "../../components/GetTouch";
 
-import {
-    
-    bookMarketingImg2,
-  } from "../../asserts/images";
+import { bookMarketingImg2 } from "../../asserts/images";
 
 const BookMarketing = () => {
   return (
     <>
-        <UserLayout>
-
+      <UserLayout>
         <InnerHero
           innerheroclass="bookMarketingBg"
           title="Reach Readers Everywhere Our Book Marketing Service"
@@ -29,7 +25,7 @@ const BookMarketing = () => {
         />
 
         <Section2
-        innerSec2Class="innerbrilliant_mind_section"
+          innerSec2Class="innerbrilliant_mind_section"
           title="From Page To Stage Random   "
           subtitle=" House Publishers"
           title2="Turns Authors Into Stars"
@@ -38,6 +34,9 @@ const BookMarketing = () => {
           // subtitle3="  Expert Guidance"
           image={bookMarketingImg2}
           imgClass="bookMarketingImg2"
+          actions={true}
+          btn1="Let’s Get Start"
+          btn2="Call Us Now"
         />
 
         <CustomCategory className="category_section2" />
@@ -48,9 +47,9 @@ const BookMarketing = () => {
         <CustomPublication />
         <Faq />
         <GetTouch />
-        </UserLayout>
+      </UserLayout>
     </>
-  )
-}
+  );
+};
 
-export default BookMarketing
+export default BookMarketing;

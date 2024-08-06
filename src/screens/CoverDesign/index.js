@@ -34,6 +34,9 @@ const CoverDesign = () => {
           // subtitle3="  Expert Guidance"
           image={CoverDesignImg2}
           imgClass="CoverDesignImg2"
+          actions={true}
+          btn1="Let’s Get Start"
+          btn2="Call Us Now"
         />
 
         <CustomCategory className="category_section2" />

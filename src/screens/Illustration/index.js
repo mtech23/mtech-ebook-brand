@@ -1,5 +1,5 @@
-import React from 'react'
-import UserLayout from '../../components/Layout/UserLayout'
+import React from "react";
+import UserLayout from "../../components/Layout/UserLayout";
 import InnerHero from "../../components/InnerHero";
 import Section2 from "../../components/Section2";
 import CustomCategory from "../../components/CustomCategory";
@@ -11,16 +11,12 @@ import CustomPublication from "../../components/CustomPublication";
 import Faq from "../../components/Faq";
 import GetTouch from "../../components/GetTouch";
 
-import {
-    
-    illustrationImg2,
-  } from "../../asserts/images";
+import { illustrationImg2 } from "../../asserts/images";
 
 const Illustration = () => {
   return (
     <>
-        <UserLayout>
-
+      <UserLayout>
         <InnerHero
           innerheroclass="illustrationBg"
           title="Let Your Story Shine With Our Custom"
@@ -29,7 +25,7 @@ const Illustration = () => {
         />
 
         <Section2
-        innerSec2Class="innerbrilliant_mind_section"
+          innerSec2Class="innerbrilliant_mind_section"
           title="Authors, Meet Your Visual  "
           subtitle=" Storytellers"
           // title2="For Your Voice!"
@@ -38,6 +34,9 @@ const Illustration = () => {
           // subtitle3="  Expert Guidance"
           image={illustrationImg2}
           imgClass="illustrationImg2"
+          actions={true}
+          btn1="Let’s Get Start"
+          btn2="Call Us Now"
         />
 
         <CustomCategory className="category_section2" />
@@ -48,9 +47,9 @@ const Illustration = () => {
         <CustomPublication />
         <Faq />
         <GetTouch />
-        </UserLayout>
+      </UserLayout>
     </>
-  )
-}
+  );
+};
 
-export default Illustration
+export default Illustration;

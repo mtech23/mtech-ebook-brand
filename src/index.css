@@ -66,5 +66,7 @@ a:hover {
   font-family: "Hind";
   src: url("./asserts/fonts/Hind.ttf");
 }
-
-
+@font-face {
+  font-family: "HindBold";
+  src: url("./asserts/fonts/Hind-Bold.woff");
+}

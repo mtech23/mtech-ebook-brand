@@ -1,3 +1,5 @@
+import logo from "./logo.png";
+
 import heroImgLeft from "./hero-left.png";
 import brilliantBookImg from "./brilliantImg.png";
 import boxBelowImg from "./Group.png";
@@ -25,6 +27,7 @@ import bannerImg from "./bannerImg.png";
 import bannerImg01 from "./dfdf.png";
 import ImgUnderArc from "./under_arc.png";
 import A4book from "./A4Book.png";
+import A4book1 from "./A4Book1.png";
 import categoryIcon01 from "./cateIcon1.png";
 import categoryIcon02 from "./cateIcon2.png";
 import categoryIcon03 from "./cateIcon3.png";
@@ -84,7 +87,10 @@ import testImg6 from "./test-img6.png";
 import testImg7 from "./test-img7.png";
 import testImg8 from "./test-img8.png";
 
+import testVideo1 from "./testimonial-video1.mp4";
+
 export {
+  logo,
   chatIcon,
   heroImgLeft,
   brilliantBookImg,
@@ -111,6 +117,7 @@ export {
   bannerImg01,
   ImgUnderArc,
   A4book,
+  A4book1,
   categoryIcon01,
   categoryIcon02,
   categoryIcon03,
@@ -168,4 +175,5 @@ export {
   testImg6,
   testImg7,
   testImg8,
+  testVideo1,
 };

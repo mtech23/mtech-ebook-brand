@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -72,8 +72,57 @@ import CustomCategory from "../../components/CustomCategory";
 import UserLayout from "../../components/Layout/UserLayout";
 import PublishBook from "../../components/PublishBook";
 import Partners from "../../components/Partners";
+import { tab } from "@testing-library/user-event/dist/tab";
+
+const tabs = [
+  {
+    id: "book-publishing",
+    title: "Book Publishing",
+    icon: helpingIcon01,
+    content:
+      "Book Publishing involves the process of producing and distributing literature to the public. It includes everything from manuscript preparation to marketing and distribution. It has evolved over the centuries, incorporating new technologies such as electronic typesetting and digital publishing.",
+    className: "blue",
+  },
+  {
+    id: "ghost-writing",
+    title: "Ghost Writing",
+    icon: helpingIcon02,
+    content:
+      "Ghost Writing is the practice of writing for someone else who is credited as the author. Ghostwriters play a crucial role in creating content that reflects the voice and ideas of the credited author. This field has seen significant development with the rise of ghostwriting for books, articles, and other media.",
+    className: "pink",
+  },
+  {
+    id: "book-editing",
+    title: "Book Editing",
+    icon: helpingIcon03,
+    content:
+      "when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem.",
+    className: "lime",
+  },
+  {
+    id: "ebook-writing",
+    title: "Ebook Writing",
+    icon: helpingIcon04,
+    content:
+      "Ebook Writing focuses on creating digital books that are distributed electronically. This format allows for easy access and distribution to a global audience. Writing for ebooks often involves different considerations compared to print books, including formatting and interactive elements.",
+    className: "orange",
+  },
+  {
+    id: "lorem-ipsum",
+    title: "Lorem Ipsum 1",
+    icon: helpingIcon05,
+    content:
+      "Lorem Ipsum is a type of placeholder text used in the publishing and design industries. It helps designers visualize how the final text will look in a layout before the actual content is available. The text is derived from sections of Latin literature and has been used since the 1960s.",
+    className: "teal",
+  },
+];
 
 const Home = () => {
+  // const [activeTab, setActiveTab] = useState({});
+  const [activeTab, setActiveTab] = useState(tabs[2]);
+
+  console.log("activetabs", activeTab);
+
   return (
     <>
       <UserLayout>
@@ -177,9 +226,9 @@ const Home = () => {
             <img draggable={false} src={polygon01} alt="polygon"></img>
           </div>
 
-          <section className="sec2_about">
-            <div className="container">
-              <div class="row">
+          <section className="sec2_about sec_padding">
+            <div className="container-fluid">
+              <div class="row align-items-center">
                 <div class="col-sm-12 col-lg-6">
                   <div class="sec_title">
                     <h2
@@ -188,7 +237,12 @@ const Home = () => {
                       data-aos-offset="0"
                       data-aos-duration="1000"
                     >
-                      BRILLIANT<span class="color-red"> MINDS PUBLISH </span>{" "}
+                      BRILLIANT
+                      <span class="color-red">
+                        {" "}
+                        MINDS
+                        <br /> PUBLISH{" "}
+                      </span>{" "}
                       HERE
                     </h2>
                     <p
@@ -288,7 +342,7 @@ const Home = () => {
                     >
                       <img
                         src={brilliantBookImg}
-                        className="img-fluid"
+                        className="img-fluid home_img2"
                         alt=""
                       ></img>
 
@@ -320,8 +374,8 @@ const Home = () => {
 
         <section className="helping_things_section">
           <div className="container-fluid">
-            <div className="row align-items-center">
-              <div className="col-sm-12 col-lg-6">
+            <div className="row align-items-center justify-content-center">
+              <div className="col-sm-12 col-md-8 col-lg-6">
                 <div className="helping_left_part">
                   <div id="parent-circle">
                     <div className="duolingo_Under_img">
@@ -332,7 +386,25 @@ const Home = () => {
                       ></img>
                     </div>
 
-                    <div class="circle blue making_it_none">
+                    {tabs.map((item, ind) => {
+                      const isActive = activeTab.id === item.id;
+                      return (
+                        <div
+                          class={`circle ${item.className} ${
+                            isActive ? "active" : ""
+                          } making_it_none`}
+                          onClick={() => setActiveTab(item)}
+                        >
+                          <img
+                            src={item.icon}
+                            alt="helpingIcon"
+                            className="duolingo_tab_img"
+                          ></img>
+                          <h6 className="duolingo_tab_title">{item.title}</h6>
+                        </div>
+                      );
+                    })}
+                    {/* <div class="circle blue making_it_none">
                       <img
                         src={helpingIcon01}
                         alt="helpingIcon"
@@ -371,12 +443,37 @@ const Home = () => {
                         className="duolingo_tab_img"
                       ></img>
                       <h6 className="duolingo_tab_title">Lorem Ipsum</h6>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
                 <div className="main_duolingo_tab_below">
-                  <div className="single_duolingo_tab_below">
+                  {tabs.map((item, index) => {
+                    const isActive1 = activeTab.id === item.id;
+                    return (
+                      <div
+                        className={`single_duolingo_tab_below ${
+                          isActive1 ? "active" : ""
+                        }`}
+                        onClick={() => setActiveTab(item)}
+                      >
+                        <div className="duolingo_tab_img_below">
+                          <img
+                            // src={helpingIcon02}
+                            src={item.icon}
+                            alt="helpingIcon"
+                            className="duolingo_tab_img"
+                          ></img>
+                        </div>
+                        <div className="">
+                          <h6 className="duolingo_tab_title_below m-0">
+                            {item.title}
+                          </h6>
+                        </div>
+                      </div>
+                    );
+                  })}
+                  {/* <div className="single_duolingo_tab_below">
                     <div className="duolingo_tab_img_below">
                       <img
                         src={helpingIcon01}
@@ -450,10 +547,11 @@ const Home = () => {
                       </h6>
                     </div>
                   </div>
+                </div> */}
                 </div>
               </div>
 
-              <div className="col-sm-10 col-lg-6 mx-auto">
+              <div className="col-sm-12 col-md-8 col-lg-6 mx-auto">
                 <div className="main_helping_content">
                   <div className="sec_title">
                     <h2
@@ -478,7 +576,7 @@ const Home = () => {
                         data-aos-offset="0"
                         data-aos-duration="3000"
                       >
-                        Book Editing
+                        {activeTab.title}
                       </h3>
                     </div>
                     <p
@@ -487,12 +585,7 @@ const Home = () => {
                       data-aos-duration="3000"
                       className="helping_tab_para"
                     >
-                      when an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book. It has survived
-                      not only five centuries, but also the leap into electronic
-                      typesetting, remaining essentially unchanged. It was
-                      popularised in the 1960s with the release of Letraset
-                      sheets containing Lorem.
+                      {activeTab.content}
                     </p>
                     <p
                       data-aos="fade-up"
@@ -518,6 +611,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+          {/* </div> */}
         </section>
 
         <FirstCustomBanner />
@@ -807,7 +901,7 @@ const Home = () => {
 </div>
 </section> */}
 
-        <section class="process_sec">
+        <section class="process_sec sec_padding">
           <img
             draggable={false}
             src={processFeather}
@@ -815,7 +909,7 @@ const Home = () => {
             alt="feather"
           />
 
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
               <div class="col-md-12">
                 <div class="sec_title">
@@ -1158,7 +1252,7 @@ const Home = () => {
         <section className="progress_sec">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-lg-4 col-sm-10 mx-auto process-m">
+              <div className="col-md-4 col-sm-10 mx-auto process-m">
                 <div className="progress_item">
                   <div className="sec_title">
                     <h2>
@@ -1168,7 +1262,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-sm-10 mx-auto process-m">
+              <div className="col-md-4 col-sm-10 mx-auto process-m progress_col2">
                 <div className="progress_item">
                   <div className="sec_title">
                     <h2>
@@ -1178,7 +1272,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-sm-10 mx-auto process-m">
+              <div className="col-md-4 col-sm-10 mx-auto process-m">
                 <div className="progress_item">
                   <div className="sec_title">
                     <h2>

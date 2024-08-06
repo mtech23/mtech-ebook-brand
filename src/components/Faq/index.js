@@ -1,22 +1,23 @@
-import React from 'react';
-import Accordion from 'react-bootstrap/Accordion';
-import { categorybk } from '../../asserts/images';
+import React from "react";
+import Accordion from "react-bootstrap/Accordion";
+import { categorybk } from "../../asserts/images";
 
 const Faq = () => {
   return (
     <>
-         <section class="faqs_sec">
-      
-      <div className="publishBgPattern">
+      <section class="faqs_sec sec_padding">
+        <div className="publishBgPattern">
           <img draggable={false} src={categorybk} alt="" />
         </div>
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
               <div class="sec_title">
-                <h2 data-aos="fade-up"
-                data-aos-offset="0"
-                data-aos-duration="2000">
+                <h2
+                  data-aos="fade-up"
+                  data-aos-offset="0"
+                  data-aos-duration="2000"
+                >
                   FREQUENTLY
                   <span class="color-red">ASKED QUESTIONS</span>
                 </h2>
@@ -142,7 +143,7 @@ const Faq = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Faq
+export default Faq;

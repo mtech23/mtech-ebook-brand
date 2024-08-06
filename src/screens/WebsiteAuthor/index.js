@@ -1,5 +1,5 @@
-import React from 'react'
-import UserLayout from '../../components/Layout/UserLayout'
+import React from "react";
+import UserLayout from "../../components/Layout/UserLayout";
 import InnerHero from "../../components/InnerHero";
 import Section2 from "../../components/Section2";
 import CustomCategory from "../../components/CustomCategory";
@@ -11,16 +11,12 @@ import CustomPublication from "../../components/CustomPublication";
 import Faq from "../../components/Faq";
 import GetTouch from "../../components/GetTouch";
 
-import {
-    
-    websiteAuthorImg2,
-  } from "../../asserts/images";
+import { websiteAuthorImg2 } from "../../asserts/images";
 
 const WebsiteAuthor = () => {
   return (
     <>
-        <UserLayout>
-
+      <UserLayout>
         <InnerHero
           innerheroclass="websiteAuthorBg"
           title="Color Your Book With"
@@ -29,7 +25,7 @@ const WebsiteAuthor = () => {
         />
 
         <Section2
-        innerSec2Class="innerbrilliant_mind_section"
+          innerSec2Class="innerbrilliant_mind_section"
           title="Bringing Books To Brilliant "
           subtitle=" Life Through"
           title2=" Art "
@@ -38,6 +34,9 @@ const WebsiteAuthor = () => {
           // subtitle3="  Expert Guidance"
           image={websiteAuthorImg2}
           imgClass="websiteAuthorImg2"
+          actions={true}
+          btn1="Let’s Get Start"
+          btn2="Call Us Now"
         />
 
         <CustomCategory className="category_section2" />
@@ -48,9 +47,9 @@ const WebsiteAuthor = () => {
         <CustomPublication />
         <Faq />
         <GetTouch />
-        </UserLayout>
+      </UserLayout>
     </>
-  )
-}
+  );
+};
 
-export default WebsiteAuthor
+export default WebsiteAuthor;

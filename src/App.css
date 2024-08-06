@@ -45,6 +45,18 @@ body {
   gap: 4px;
 }
 
+.header-logo {
+  max-width: 140px;
+}
+.header-logo img {
+  width: 100%;
+}
+
+/* .header_navbar .navbar-nav {
+  margin-left: auto;
+  gap: 13px;
+} */
+
 .navbar_para {
   font-family: "poppinsSemibold";
   text-align: center;
@@ -67,6 +79,9 @@ body {
 
 .header_light_bold {
   font-family: "poppinsLight";
+}
+.header_navbar .navbar-nav {
+  gap: 40px;
 }
 
 /* HEADER SECTION CSS END */
@@ -179,6 +194,7 @@ body {
   /* mask-image: url("./second-shape.png"); */
   /* -webkit-mask-repeat: no-repeat; */
   /* mask-repeat: no-repeat;     */
+  overflow: hidden !important;
 }
 
 .book_img img {
@@ -213,6 +229,7 @@ body {
 
 .book_main_box {
   position: relative;
+  text-align: center;
 }
 
 .book_semicircle_box {
@@ -281,7 +298,8 @@ body {
 
 .redCircleBehindBook {
   position: absolute;
-  right: 30px;
+  /* right: 30px; */
+  right: 80px;
   bottom: 0;
   width: 50%;
 }
@@ -352,33 +370,46 @@ body {
   .circle {
     display: block;
     position: absolute;
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
+    width: 80px;
+    height: 80px;
     /* top: 50%;  */
     /* left: 50%; */
+    cursor: pointer;
 
     &.blue {
       top: 6%;
-      transform: translate(14vw);
+      /* transform: translate(14vw); */
+      transform: translate(13vw);
     }
     &.pink {
-      right: 7%;
+      /* right: 7%; */
+      right: 10%;
       top: -11%;
       transform: rotate(72deg) translate(14vw) rotate(-72deg);
     }
     &.lime {
-      right: -10%;
-      transform: rotate(144deg) translate(1vw) rotate(-144deg);
+      /* right: -10%;
+      transform: rotate(144deg) translate(1vw) rotate(-144deg); */
+      right: -4%;
+      transform: rotate(144deg) translate(-1vw) rotate(-144deg);
     }
     &.orange {
-      right: 24%;
+      /* right: 24%; */
+      right: 27%;
       transform: rotate(216deg) translate(-14vw) rotate(-216deg);
     }
     &.teal {
-      right: -4%;
+      /* right: -4%; */
+      right: 0%;
       transform: rotate(288deg) translate(-16vw) rotate(-288deg);
     }
   }
+}
+.circle.active,
+.single_duolingo_tab_below.active {
+  color: #ed0742;
 }
 
 .duolingo_tab_img {
@@ -412,6 +443,12 @@ body {
   padding: 0px 0px 0px;
   /* background-position: right; */
   background-position: center;
+}
+.first_banner_left_part {
+  margin-bottom: 5%;
+}
+.first_banner_section .sec_title h2 {
+  font-size: 42px;
 }
 
 .category_section {
@@ -451,6 +488,14 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.first_category:hover,
+.second_category:hover,
+.third_category:hover,
+.forth_category:hover,
+.fifth_category:hover {
+  cursor: pointer;
 }
 
 .first_category {
@@ -707,9 +752,16 @@ body {
   bottom: 50px;
 }
 
+/* .category_circle {
+  display: flex;
+  justify-content: center;
+} */
 .category_circle {
   display: flex;
   justify-content: center;
+  transform: scale(1.2);
+  transform-origin: left;
+  margin: 60px 0;
 }
 
 .progress_sec {
@@ -739,21 +791,23 @@ body {
   position: relative;
 }
 .publicationBook1 {
-  width: 100%;
-  transform: scale(1.6);
+  width: 90%;
+  transform: scale(1.5) translate(90px, 0);
+  margin-bottom: -140px;
   transform-origin: top;
 }
 .publicationBook2 {
-  width: 80%;
+  width: 60%;
   position: relative;
-  left: -20%;
+  left: 0%;
   z-index: 2;
+  top: 50px;
 }
 .audio_player {
   max-width: 300px;
   position: absolute;
   bottom: 100px;
-  right: 0;
+  right: 30px;
   z-index: 9999;
 }
 .audio_player audio::-webkit-media-controls-panel {
@@ -770,7 +824,7 @@ audio::-webkit-media-controls-time-remaining-display {
   z-index: 999;
 }
 .sec_title h2 {
-  font-size: 32px;
+  font-size: 52px;
   font-family: "Jomolhari", serif;
   line-height: 1.2;
   font-weight: 400;
@@ -819,7 +873,8 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 .brand_btn-secondary {
   background-image: url("./asserts/images/btn-brand-bg-red.png");
-  background-size: 100%;
+  /* background-size: 100%; */
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -894,7 +949,7 @@ audio::-webkit-media-controls-time-remaining-display {
   text-align: center;
 }
 .process_step {
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Hind", sans-serif;
   font-weight: 600;
 }
@@ -907,22 +962,30 @@ audio::-webkit-media-controls-time-remaining-display {
   margin-bottom: 4px;
 }
 .process_content_title {
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Jomolhari", serif;
   font-weight: 400;
 }
 .process_content p {
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.5;
 }
 .process_counter h1 {
-  font-size: 210px;
-  font-family: "Hind", sans-serif;
+  font-size: 390px;
+  font-family: "HindBold", sans-serif;
   font-weight: 700;
   color: #181818;
   opacity: 0.1;
+}
+.process_img img {
+  margin: 0 auto;
+  display: block;
+}
+.progress_col2 {
+  border-left: 1px solid #fff8;
+  border-right: 1px solid #fff8;
 }
 
 /* Process Sec End */
@@ -931,7 +994,7 @@ audio::-webkit-media-controls-time-remaining-display {
 .faqs_sec .accordion-button {
   background: linear-gradient(45deg, #f47d9c 0%, #ed0742 100%);
   border: none;
-  padding: 18px;
+  padding: 20px 30px;
   border-radius: 25px !important;
   text-decoration: none;
   background-color: transparent;
@@ -947,10 +1010,11 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 .faqs_sec .card_btn_content {
   color: #fff;
-  font-size: 15px;
+  font-size: 17px;
 }
 .faqs_sec .accordion-body {
-  padding: 0px 16px 16px;
+  padding: 10px 30px 30px;
+  font-size: 17px;
 }
 .numbering {
   font-size: 26px;
@@ -961,7 +1025,7 @@ audio::-webkit-media-controls-time-remaining-display {
   /* border-top-left-radius: 25px !important;
   border-top-right-radius: 25px !important; */
   border-radius: 25px;
-  margin: 16px 0;
+  margin: 40px 0;
   position: relative;
   z-index: 999;
   background: #fff;
@@ -1003,7 +1067,7 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 .get_touch_img img {
   width: 100%;
-  transform: scale(2.8) translateX(-26px);
+  transform: scale(2) translateX(-26px);
   transform-origin: center;
 }
 .get_touch_form {
@@ -1174,6 +1238,11 @@ audio::-webkit-media-controls-time-remaining-display {
   margin-top: unset;
   /* padding-top: 150px; */
   padding-top: 80px;
+  overflow: hidden !important;
+}
+
+.innerbrilliant_mind_section .innerBoxBelowImg {
+  width: 90%;
 }
 
 /* .navbar-collapse{
@@ -1228,6 +1297,8 @@ audio::-webkit-media-controls-time-remaining-display {
   align-items: center;
   justify-content: space-between;
   padding: 16px 0;
+  max-width: 650px;
+  margin: 0 auto;
 }
 .inner-hero_badges img {
   max-width: 143px;
@@ -1239,6 +1310,8 @@ audio::-webkit-media-controls-time-remaining-display {
   background-size: 100% 100%;
   position: relative;
   z-index: 99;
+  max-width: 650px;
+  margin: 0 auto;
 }
 .inner-hero_form-badge {
   position: absolute;
@@ -1370,54 +1443,80 @@ audio::-webkit-media-controls-time-remaining-display {
 .first_category_detail .category_detail_title {
   transition: all 0.25s;
 }
+
+.category_circle .arc .active .category_detail_title {
+  color: red;
+  font-weight: 900;
+}
 .first_category_detail:hover .category_detail_title {
   color: red;
   font-weight: 900;
 }
 
 .ghost-img2 {
-  transform: scale(1.5) translateY(10px);
+  transform: scale(1.4) translate(20px, 30px);
 }
 .book-publishingImg2 {
-  transform: scale(2.2) translate(-44px, 21px);
+  transform: scale(2) translate(-64px, 42px);
 }
 .audioImg2 {
-  transform: scale(1.5) translate(-20px, 20px);
+  transform: scale(1.3) translate(-40px, 58px);
 }
 .bookEditingImg2 {
-  transform: scale(1.3);
+  transform: scale(1.2) translate(-50px, 16px);
 }
 .bookMarketingImg2 {
-  transform: scale(2) translate(-40px, 1px);
+  transform: scale(1.7) translate(-80px, 23px);
 }
 .faithWriterImg2 {
-  transform: scale(2.6) translate(-40px, 17px);
+  transform: scale(2) translate(-70px, 67px);
 }
 .illustrationImg2 {
-  transform: scale(1.5) translate(0px, -31px);
+  transform: scale(1.2) translate(0px, 4px);
 }
 .childrenIllustrationImg2 {
-  transform: scale(1.5);
+  transform: scale(1.3) translate(10px, 30px);
 }
 .childrenBookPrintingImg2 {
-  transform: scale(1.2) translate(0px, 10px);
+  transform: scale(1) translate(0px, 70px);
+  margin-top: -150px;
 }
 .websiteAuthorImg2 {
-  transform: scale(1.3) translate(-20px, 46px);
+  transform: scale(1.3) translate(-70px, 73px);
   width: 100% !important;
 }
 .commicIllustrationImg2 {
-  transform: scale(1) translate(-20px, 50px);
+  transform: scale(1) translate(-20px, 70px);
   width: 80% !important;
+  margin-top: -100px;
 }
 .bookTrailerImg2 {
-  transform: scale(2.2) translate(-44px, 21px);
+  transform: scale(2) translate(-68px, 42px);
 }
 .CoverDesignImg2 {
-  transform: scale(1.1);
+  transform: scale(1) translate(-20px, 30px);
 }
 
 /* Inner Pages Css End */
+
+.sec_padding {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.process_rows:nth-child(even) .process_counter h1 {
+  text-align: right;
+}
+.get_touch_title {
+  padding-left: 50px;
+}
+.inner-hero_content .sec_title h2 {
+  text-transform: capitalize;
+  font-size: 62px;
+}
+
+.home_img2 {
+  margin-bottom: -70px;
+}
 /* Usama Css End */
 
 @media (max-width: 1800px) {
@@ -1435,6 +1534,25 @@ audio::-webkit-media-controls-time-remaining-display {
 @media (max-width: 1600px) {
   #parent-circle {
     height: 670px !important;
+  }
+  .process_counter h1 {
+    font-size: 300px;
+  }
+  .audio_player {
+    bottom: 70px;
+  }
+  .publicationBook1 {
+    transform: scale(1.6) translate(80px, -30px);
+    margin-bottom: -140px;
+  }
+  .inner-hero_content .sec_title h2 {
+    font-size: 53px;
+  }
+  .custom_two_sec_title h2 {
+    font-size: 46px !important;
+  }
+  .websiteAuthorImg2 {
+    transform: scale(1.3) translate(-70px, 63px);
   }
 }
 
@@ -1508,11 +1626,118 @@ audio::-webkit-media-controls-time-remaining-display {
     margin: 0 auto;
     display: block;
   }
+  .process_content_title {
+    font-size: 33px;
+  }
+  .process_counter h1 {
+    font-size: 250px;
+  }
+  .first_banner_section .sec_title h2 {
+    font-size: 37px;
+  }
+  .progress_sec .sec_title h2 {
+    font-size: 42px;
+  }
+  .publicationBook1 {
+    transform: scale(1.6) translate(30px, -30px);
+    margin-bottom: -90px;
+    width: 100%;
+  }
+  .publicationBook2 {
+    left: -30px;
+  }
+  .get_touch_title {
+    padding-left: 0;
+  }
+  .helping_tab_para {
+    padding-right: 100px;
+  }
+  .inner-hero_content .sec_title h2 {
+    font-size: 44px;
+  }
+  .book-publishingImg2 {
+    transform: scale(2) translate(-52px, 32px);
+  }
+  .bookMarketingImg2 {
+    transform: scale(1.7) translate(-50px, 17px);
+  }
+  .audioImg2 {
+    transform: scale(1.3) translate(-40px, 42px);
+  }
+  .bookTrailerImg2 {
+    transform: scale(2) translate(-52px, 35px);
+  }
+}
+@media (max-width: 1380px) {
+  .faqs_sec .accordion-button {
+    padding: 20px 20px;
+  }
+  .faqs_sec .accordion-body {
+    padding: 10px 20px 30px;
+    font-size: 16px;
+  }
+  .faqs_sec .card_btn_content {
+    font-size: 16px;
+  }
+  .header_navbar .navbar-nav {
+    gap: 25px;
+  }
+  .ghost-img2 {
+    transform: scale(1.4) translate(20px, 30px);
+    width: 70% !important;
+  }
+  .innerbrilliant_mind_section .innerBoxBelowImg {
+    width: 100%;
+  }
+  .redCircleBehindBook {
+    right: 33px;
+    width: 60%;
+  }
+  .faithWriterImg2 {
+    transform: scale(1.7) translate(-70px, 103px);
+    width: 100% !important;
+    margin-top: -90px;
+  }
+  .custom_two_sec_title h2 {
+    font-size: 39px !important;
+  }
+  .bookMarketingImg2 {
+    transform: scale(1.7) translate(-50px, 17px);
+    width: 80% !important;
+  }
+  .CoverDesignImg2 {
+    transform: scale(1) translate(-20px, 30px);
+    width: 80% !important;
+    margin-top: -70px;
+  }
+  .audioImg2 {
+    transform: scale(1.3) translate(-40px, 42px);
+    width: 70% !important;
+  }
 }
 
 @media (max-width: 1370px) {
   #parent-circle {
     height: 570px !important;
+  }
+}
+@media (max-width: 1360px) {
+  .custom_two_sec_title h2 {
+    font-size: 37px !important;
+  }
+}
+@media (max-width: 1340px) {
+  .publicationBook1 {
+    transform: scale(1.6) translate(30px, -30px);
+    margin-bottom: -30px;
+  }
+  .publicationBook2 {
+    left: -30px;
+    top: 0;
+  }
+  .audio_player {
+    bottom: 130px;
+    right: 0;
   }
 }
 
@@ -1555,6 +1780,55 @@ audio::-webkit-media-controls-time-remaining-display {
   .get_touch_title .sec_title h2 {
     font-size: 50px;
   }
+  .sec_padding {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  #parent-circle {
+    & .circle {
+      &.pink {
+        right: 8%;
+        top: -8%;
+        transform: rotate(72deg) translate(14vw) rotate(-72deg);
+      }
+    }
+  }
+  #parent-circle {
+    & .circle {
+      &.blue {
+        top: 6%;
+        transform: translate(14vw);
+      }
+    }
+  }
+  #parent-circle {
+    & .circle {
+      &.lime {
+        right: -6%;
+        transform: rotate(144deg) translate(-1vw) rotate(-144deg);
+      }
+    }
+  }
+  #parent-circle {
+    & .circle {
+      &.orange {
+        right: 24%;
+        transform: rotate(216deg) translate(-14vw) rotate(-216deg);
+      }
+    }
+  }
+  #parent-circle {
+    & .circle {
+      &.teal {
+        right: -5%;
+        transform: rotate(288deg) translate(-16vw) rotate(-288deg);
+      }
+    }
+  }
+  .helping_tab_para {
+    padding-right: 60px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -1564,6 +1838,9 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 @media (max-width: 1200px) {
+  .progress_sec .sec_title h2 {
+    font-size: 32px;
+  }
   .category_circle {
     justify-content: end !important;
   }
@@ -1579,7 +1856,7 @@ audio::-webkit-media-controls-time-remaining-display {
   }
 
   .helping_tab_para {
-    padding-right: 100px !important;
+    padding-right: 60px !important;
   }
 
   .polygonImg01 {
@@ -1589,7 +1866,7 @@ audio::-webkit-media-controls-time-remaining-display {
   }
 
   .sec_title h2 {
-    font-size: 27px;
+    font-size: 37px;
   }
 
   .sec_title p {
@@ -1599,8 +1876,52 @@ audio::-webkit-media-controls-time-remaining-display {
   .ebook_publisher_title {
     font-size: 38px !important;
   }
+  .navbar_para {
+    font-size: 13px;
+  }
+  .navbar_para_bottom {
+    font-size: 12px;
+    padding-top: 2px;
+  }
+  .first_banner_section .sec_title h2 {
+    font-size: 32px;
+  }
+  .process_content_title {
+    font-size: 27px;
+  }
+  .process_counter h1 {
+    font-size: 200px;
+  }
+  .process_step {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  .inner-hero_content .sec_title h2 {
+    font-size: 35px;
+  }
+  @media (max-width: 1280px) {
+    #parent-circle {
+      & .circle {
+        &.lime {
+          right: -11%;
+          transform: rotate(144deg) translate(1vw) rotate(-144deg);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .commicIllustrationImg2 {
+    transform: scale(1) translate(-20px, 60px);
+    margin-top: -40px;
+  }
 }
 
+@media (max-width: 1180px) {
+  .custom_two_sec_title h2 {
+    font-size: 32px !important;
+  }
+}
 @media (max-width: 1130px) {
   #parent-circle {
     height: 460px !important;
@@ -1615,7 +1936,7 @@ audio::-webkit-media-controls-time-remaining-display {
 
 @media (max-width: 1024px) {
   .publicationBook1 {
-    width: 91%;
+    width: 100%;
   }
   .publicationBook2 {
     width: 74%;
@@ -1638,7 +1959,7 @@ audio::-webkit-media-controls-time-remaining-display {
     width: 87%;
   }
   .audio_player {
-    bottom: 186px;
+    bottom: 106px;
   }
   .innerbrilliant_mind_section {
     padding-bottom: 170px;
@@ -1656,9 +1977,83 @@ audio::-webkit-media-controls-time-remaining-display {
   .get_touch_img img {
     transform: scale(2.2) translate(4px, 24px);
   }
+  .first_banner_section .sec_title h2 {
+    font-size: 28px;
+  }
+  .first_banner_left_part {
+    margin-bottom: 0;
+  }
+  .header_navbar .navbar-nav {
+    gap: 14px;
+  }
+  #parent-circle {
+    .circle {
+      height: 60px !important;
+      width: 60px !important;
+    }
+  }
+  .duolingo_tab_title {
+    font-size: 19px;
+    margin-left: 6px;
+  }
+  .helping_tab_para {
+    padding-right: 20px !important;
+  }
+  .category_circle {
+    margin: unset;
+    transform: unset;
+  }
+  .subtititle2 {
+    font-size: 23px !important;
+    margin-bottom: 10px;
+  }
+  .faithWriterImg2 {
+    transform: scale(1.7) translate(-50px, 53px);
+    width: 80% !important;
+    margin-top: -20px;
+  }
+  .bookEditingImg2 {
+    transform: scale(1.2) translate(-30px, 16px);
+    width: 70% !important;
+  }
+  .book-publishingImg2 {
+    transform: scale(1.7) translate(-52px, 42px);
+    width: 80% !important;
+  }
+  .bookTrailerImg2 {
+    transform: scale(1.7) translate(-50px, 43px);
+    width: 80% !important;
+  }
+  .childrenIllustrationImg2 {
+    transform: scale(1.2) translate(10px, 30px);
+    width: 80% !important;
+  }
+  .childrenBookPrintingImg2 {
+    transform: scale(1) translate(0px, 50px);
+    margin-top: -70px;
+    width: 80% !important;
+  }
+  .websiteAuthorImg2 {
+    transform: scale(1.3) translate(-30px, 39px);
+    width: 100% !important;
+  }
+  .commicIllustrationImg2 {
+    transform: scale(1) translate(-20px, 50px);
+    margin-top: 20px;
+  }
+  .home_img2 {
+    margin-bottom: -40px;
+  }
+  .brand_btn-secondary {
+    background-size: 100%;
+  }
 }
 
 @media (max-width: 991px) {
+  .sec_title h2 {
+    font-size: 32px;
+  }
+
   .category_circle {
     justify-content: center !important;
   }
@@ -1688,7 +2083,8 @@ audio::-webkit-media-controls-time-remaining-display {
   #parent-circle {
     width: 400px !important;
     height: 400px !important;
-    transform: translateX(15%) !important;
+    /* transform: translateX(15%) !important; */
+    transform: translateX(0%) !important;
   }
 
   .duolingo_tab_title {
@@ -1772,7 +2168,10 @@ audio::-webkit-media-controls-time-remaining-display {
     text-align: center;
   }
 
-  .inner-hero_content .inner-btn-group {
+  /* .inner-hero_content .inner-btn-group {
+    justify-content: center;
+  } */
+  .inner-btn-group {
     justify-content: center;
   }
   .sec2_about .row {
@@ -1823,12 +2222,106 @@ audio::-webkit-media-controls-time-remaining-display {
   .process-m {
     margin: 30px 0;
   }
-  .process-m:nth-child(2) {
-    margin: 0;
-  }
+
   .brilliant_mind_HomeSection {
     margin-top: -468px;
     padding: 670px 0px 270px;
+  }
+
+  .navbar_para_bottom {
+    font-size: 13px;
+    padding-top: 5px;
+    margin-bottom: 0;
+  }
+  .header_navbar .navbar-nav {
+    gap: 10px;
+  }
+  .navbar_para {
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .process_rows:nth-child(even) .process_counter h1,
+  .process_rows .process_counter h1 {
+    text-align: left;
+  }
+  .process_counter h1 {
+    font-size: 350px;
+  }
+  .progress_sec .sec_title h2 {
+    font-size: 26px;
+  }
+
+  .publicationBook1 {
+    width: 70%;
+  }
+  .publicationBook1 {
+    transform: scale(1.6) translate(100px, 0);
+    margin-bottom: 0px;
+  }
+  .publicationBook2 {
+    width: 44%;
+    left: 5%;
+  }
+  .audio_player {
+    bottom: 106px;
+    right: 60px;
+  }
+  .faqs_sec .accordion-item {
+    margin: 20px 0;
+  }
+  .get_touch_sec .row {
+    justify-content: center;
+    text-align: center;
+  }
+  .inner-hero_content .sec_title {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .inner-hero_form {
+    max-width: 480px;
+  }
+
+  .helping_things_section .sec_title {
+    text-align: center;
+  }
+
+  .helping_things_section .helping_tab_img {
+    margin: 0 auto;
+  }
+  .innerbrilliant_mind_section .innerBoxBelowImg {
+    width: 80%;
+  }
+  .brilliant_mind_section .innerBoxBelowImg {
+    width: 80%;
+  }
+  .book-publishingImg2 {
+    transform: scale(1.7) translate(-80px, 68px);
+    width: 60% !important;
+    margin-top: -90px;
+  }
+  .illustrationImg2 {
+    transform: scale(1) translate(0px, 53px);
+    margin-top: -130px;
+  }
+  .childrenIllustrationImg2 {
+    margin-top: -110px;
+  }
+  .childrenBookPrintingImg2 {
+    transform: scale(1) translate(0px, 70px);
+    margin-top: -120px;
+  }
+  .websiteAuthorImg2 {
+    transform: scale(1.4) translate(-30px, 39px);
+  }
+  .commicIllustrationImg2 {
+    transform: scale(1) translate(-20px, 60px);
+    margin-top: -40px;
+  }
+  .home_img2 {
+    margin-bottom: -120px;
+    transform: scale(0.8);
   }
 }
 
@@ -1862,6 +2355,17 @@ audio::-webkit-media-controls-time-remaining-display {
 @media (max-width: 800px) {
   .first_banner_section {
     background-size: 330%;
+  }
+  .process_counter h1 {
+    font-size: 280px;
+  }
+  .sec_padding {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .home_img2 {
+    margin-bottom: -60px;
+    transform: scale(1);
   }
 }
 
@@ -1912,9 +2416,32 @@ audio::-webkit-media-controls-time-remaining-display {
   .banner_right_img {
     max-width: 200px !important;
   }
+  .book-publishingImg2 {
+    transform: scale(1.8) translate(-70px, 40px);
+    margin-top: -60px;
+  }
+  .illustrationImg2 {
+    transform: scale(1) translate(0px, 43px);
+    margin-top: -90px;
+  }
+  .childrenBookPrintingImg2 {
+    transform: scale(1) translate(0px, 60px);
+    margin-top: -110px;
+  }
+  .websiteAuthorImg2 {
+    transform: scale(1.7) translate(-30px, 19px);
+    margin-top: 60px;
+  }
+  .commicIllustrationImg2 {
+    transform: scale(1) translate(-20px, 50px);
+    margin-top: -20px;
+  }
 }
 
 @media (max-width: 767px) {
+  .process-m:nth-child(2) {
+    margin: 0;
+  }
   .navbar-collapse {
     /* background-color: rgb(233, 233, 233) !important; */
     z-index: 10;
@@ -1995,8 +2522,15 @@ audio::-webkit-media-controls-time-remaining-display {
   .copyright_sec .row {
     flex-direction: column-reverse;
   }
-  .inner-hero_content .inner-btn-group {
+  /* .inner-hero_content .inner-btn-group {
     flex-wrap: wrap;
+  } */
+  .inner-btn-group {
+    flex-wrap: wrap;
+  }
+  .progress_col2 {
+    border-left: unset;
+    border-right: unset;
   }
 }
 
@@ -2053,6 +2587,100 @@ audio::-webkit-media-controls-time-remaining-display {
   .category_section {
     padding-top: 10px !important;
   }
+
+  .process_rows:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .process_rows {
+    flex-direction: column-reverse;
+  }
+  .process_rows:nth-child(even) .process_counter h1,
+  .process_rows .process_counter h1 {
+    text-align: center;
+    line-height: 1;
+  }
+
+  .process_content {
+    margin-top: 20px;
+  }
+  .process_sec .row {
+    align-items: center;
+    margin: 0px 0;
+  }
+  .process_counter h1 {
+    font-size: 170px;
+  }
+  .process_rows:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .process_rows {
+    flex-direction: column-reverse;
+  }
+  .process_rows:nth-child(even) .process_counter h1,
+  .process_rows .process_counter h1 {
+    text-align: center;
+    line-height: 1;
+  }
+
+  .process_content {
+    margin-top: 20px;
+  }
+  .process_sec .row {
+    align-items: center;
+    margin: 0px 0;
+  }
+  .process_counter h1 {
+    font-size: 170px;
+  }
+
+  .sec_padding {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .publish_polygon {
+    max-width: 140px;
+    bottom: 300px;
+  }
+  .publish_polygon_3 {
+    max-width: 140px;
+    right: -87px;
+    top: 110px;
+  }
+  .innerbrilliant_mind_section .innerBoxBelowImg {
+    width: 100%;
+  }
+  .brilliant_mind_section .innerBoxBelowImg {
+    width: 100%;
+  }
+  .ghost-img2 {
+    transform: scale(1.4) translate(20px, 30px);
+    width: 80% !important;
+  }
+  .book_img img {
+    width: 70% !important;
+  }
+  .faithWriterImg2 {
+    transform: scale(1.9) translate(-40px, 43px);
+    width: 80% !important;
+    margin-top: 10px;
+  }
+  .book-publishingImg2 {
+    transform: scale(1.8) translate(-40px, 38px);
+    margin-top: -10px;
+  }
+  .websiteAuthorImg2 {
+    transform: scale(1.7) translate(-30px, 9px);
+    margin-top: 90px;
+  }
+  .custom_two_sec_title h2 {
+    font-size: 26px !important;
+  }
+  .home_img2 {
+    margin-bottom: -70px;
+    transform: scale(0.8);
+  }
 }
 
 @media (max-width: 428px) {
@@ -2072,9 +2700,9 @@ audio::-webkit-media-controls-time-remaining-display {
     margin-top: -450px !important;
   } */
 
-  .book_img img {
+  /* .book_img img {
     width: 40% !important;
-  }
+  } */
 
   .first_semi img,
   .second_semi img,
@@ -2218,6 +2846,22 @@ audio::-webkit-media-controls-time-remaining-display {
     margin-top: -328px;
     padding: 490px 0px 220px;
   }
+  .inner-hero_content .sec_title h2 {
+    font-size: 28px;
+  }
+  .ghost-img2 {
+    transform: scale(1.4) translate(20px, 20px);
+  }
+  .bookTrailerImg2 {
+    transform: scale(1.7) translate(-40px, 33px);
+  }
+  .audioImg2 {
+    transform: scale(1.3) translate(-20px, 25px);
+  }
+  .childrenBookPrintingImg2 {
+    transform: scale(1) translate(0px, 40px);
+    margin-top: -90px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -2226,5 +2870,18 @@ audio::-webkit-media-controls-time-remaining-display {
   } */
   .audio_player {
     right: 0;
+  }
+  .process_content p {
+    text-align: justify;
+  }
+  .process_content_title {
+    font-size: 24px;
+  }
+  .bookMarketingImg2 {
+    transform: scale(1.7) translate(-36px, 11px);
+  }
+  .book-publishingImg2 {
+    transform: scale(1.8) translate(-35px, 30px);
+    margin-top: -20px;
   }
 }

@@ -24,9 +24,9 @@ const Section2 = (props) => {
           <img draggable={false} src={polygon01} alt="polygon"></img>
         </div>
 
-        <section className="sec2_about">
-          <div className="container ">
-            <div class="row align-items-end">
+        <section className="sec2_about sec_padding">
+          <div className="container-fluid">
+            <div class="row align-items-center">
               <div class="col-sm-12 col-lg-6">
                 <div class="sec_title custom_two_sec_title">
                   <h2
@@ -91,37 +91,41 @@ const Section2 = (props) => {
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s,
                   </p>
-                  <div className=" flex">
-                    {props.btn1 && (
-                      <button
-                        type="submit"
-                        class="brand_btn"
-                        data-aos="fade-right"
-                        data-aos-offset="0"
-                        data-aos-duration="2000"
-                      >
-                        {props.btn1}
-                      </button>
-                    )}
-                    {props.btn2 && (
-                      <button
-                        type="submit"
-                        class="brand_btn"
-                        data-aos="fade-right"
-                        data-aos-offset="0"
-                        data-aos-duration="2000"
-                      >
-                        {props.btn2}
-                      </button>
-                    )}
-                  </div>
+                  {props.actions && (
+                    <div className="flex inner-btn-group">
+                      {props.btn1 && (
+                        <button
+                          type="submit"
+                          // class="brand_btn"
+                          class="btn-bg-white"
+                          data-aos="fade-right"
+                          data-aos-offset="0"
+                          data-aos-duration="2000"
+                        >
+                          {props.btn1}
+                        </button>
+                      )}
+                      {props.btn2 && (
+                        <button
+                          type="submit"
+                          // class="brand_btn"
+                          class="btn-bg-red"
+                          data-aos="fade-right"
+                          data-aos-offset="0"
+                          data-aos-duration="2000"
+                        >
+                          {props.btn2}
+                        </button>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
 
               <div class="col-sm-12 col-lg-6">
                 <div className="book_main_box">
                   <div className="book_semicircle_box">
-                    <div className="first_semi">
+                    {/* <div className="first_semi">
                       <img draggable={false} src={semi01} alt="semi"></img>
                     </div>
 
@@ -131,7 +135,7 @@ const Section2 = (props) => {
 
                     <div className="third_semi">
                       <img draggable={false} src={semi03} alt="semi"></img>
-                    </div>
+                    </div> */}
 
                     <div className="circle_with_semi">
                       <img

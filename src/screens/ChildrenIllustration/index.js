@@ -34,6 +34,9 @@ const ChildrenIllustration = () => {
           // subtitle3="  Expert Guidance"
           image={childrenIllustrationImg2}
           imgClass="childrenIllustrationImg2"
+          actions={true}
+          btn1="Let’s Get Start"
+          btn2="Call Us Now"
         />
 
         <CustomCategory className="category_section2" />

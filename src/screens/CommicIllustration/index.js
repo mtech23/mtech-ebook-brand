@@ -1,5 +1,5 @@
-import React from 'react'
-import UserLayout from '../../components/Layout/UserLayout'
+import React from "react";
+import UserLayout from "../../components/Layout/UserLayout";
 import InnerHero from "../../components/InnerHero";
 import Section2 from "../../components/Section2";
 import CustomCategory from "../../components/CustomCategory";
@@ -11,16 +11,12 @@ import CustomPublication from "../../components/CustomPublication";
 import Faq from "../../components/Faq";
 import GetTouch from "../../components/GetTouch";
 
-import {
-    
-    commicIllustrationImg2,
-  } from "../../asserts/images";
+import { commicIllustrationImg2 } from "../../asserts/images";
 
 const CommicIllustration = () => {
   return (
     <>
-        <UserLayout>
-
+      <UserLayout>
         <InnerHero
           innerheroclass="commicIllustrationBg"
           title="Supercharge Your Storyline With Our"
@@ -29,7 +25,7 @@ const CommicIllustration = () => {
         />
 
         <Section2
-        innerSec2Class="innerbrilliant_mind_section"
+          innerSec2Class="innerbrilliant_mind_section"
           title="Discover the Power of  "
           subtitle="  Visual Storytelling"
           title2="With Us"
@@ -38,6 +34,9 @@ const CommicIllustration = () => {
           // subtitle3="  Expert Guidance"
           image={commicIllustrationImg2}
           imgClass="commicIllustrationImg2"
+          actions={true}
+          btn1="Let’s Get Start"
+          btn2="Call Us Now"
         />
 
         <CustomCategory className="category_section2" />
@@ -48,9 +47,9 @@ const CommicIllustration = () => {
         <CustomPublication />
         <Faq />
         <GetTouch />
-        </UserLayout>
+      </UserLayout>
     </>
-  )
-}
+  );
+};
 
-export default CommicIllustration
+export default CommicIllustration;

@@ -9,8 +9,8 @@ import {
 const InnerHero = (props) => {
   return (
     // ghostWritingBg
-    <section className={`inner-hero ${props?.innerheroclass}`}>
-      <div className="container">
+    <section className={`inner-hero sec_padding ${props?.innerheroclass}`}>
+      <div className="container-fluid">
         <div className="row">
           <div className="col-lg-6">
             <div className="inner-hero_content">

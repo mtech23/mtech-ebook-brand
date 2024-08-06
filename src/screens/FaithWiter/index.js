@@ -1,5 +1,5 @@
-import React from 'react'
-import UserLayout from '../../components/Layout/UserLayout'
+import React from "react";
+import UserLayout from "../../components/Layout/UserLayout";
 import InnerHero from "../../components/InnerHero";
 import Section2 from "../../components/Section2";
 import CustomCategory from "../../components/CustomCategory";
@@ -11,16 +11,12 @@ import CustomPublication from "../../components/CustomPublication";
 import Faq from "../../components/Faq";
 import GetTouch from "../../components/GetTouch";
 
-import {
-    
-    faithWriterImg2,
-  } from "../../asserts/images";
+import { faithWriterImg2 } from "../../asserts/images";
 
 const FaithWriter = () => {
   return (
     <>
-        <UserLayout>
-
+      <UserLayout>
         <InnerHero
           innerheroclass="faithWritingBg"
           title="Writing The Next Chapter Of Faith Your"
@@ -30,7 +26,7 @@ const FaithWriter = () => {
         />
 
         <Section2
-        innerSec2Class="innerbrilliant_mind_section"
+          innerSec2Class="innerbrilliant_mind_section"
           title="Where Global Beliefs Find Their "
           subtitle="  Literary Voice"
           // title2="For Your Voice!"
@@ -39,6 +35,9 @@ const FaithWriter = () => {
           // subtitle3="  Expert Guidance"
           image={faithWriterImg2}
           imgClass="faithWriterImg2"
+          actions={true}
+          btn1="Let’s Discuss Project"
+          btn2="Call Us Now"
         />
 
         <CustomCategory className="category_section2" />
@@ -49,9 +48,9 @@ const FaithWriter = () => {
         <CustomPublication />
         <Faq />
         <GetTouch />
-        </UserLayout>
+      </UserLayout>
     </>
-  )
-}
+  );
+};
 
-export default FaithWriter
+export default FaithWriter;

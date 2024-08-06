@@ -1,8 +1,6 @@
 import React from "react";
 import UserLayout from "../../components/Layout/UserLayout";
-import {
-  sec2img,
-} from "../../asserts/images";
+import { sec2img } from "../../asserts/images";
 import InnerHero from "../../components/InnerHero";
 import Section2 from "../../components/Section2";
 import CustomCategory from "../../components/CustomCategory";
@@ -26,7 +24,7 @@ const GhostWriter = () => {
         />
 
         <Section2
-        innerSec2Class="innerbrilliant_mind_section"
+          innerSec2Class="innerbrilliant_mind_section"
           title="Trust Our "
           subtitle="  Ghostwriters"
           title2="For Your Voice!"

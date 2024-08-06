@@ -4,8 +4,8 @@ import { bannerImg01 } from "../../asserts/images";
 const FirstCustomBanner = () => {
   return (
     <>
-      <section className="first_banner_section">
-        <div className="container">
+      <section className="first_banner_section sec_padding">
+        <div className="container-fluid">
           <div className="row align-items-end">
             <div className="col-sm-12 col-lg-7">
               <div className="first_banner_left_part">

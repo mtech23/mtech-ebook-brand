@@ -4,9 +4,26 @@ import { getTouchBook } from "../../asserts/images";
 const GetTouch = () => {
   return (
     <>
-      <section class="get_touch_sec">
-        <div class="container">
+      <section class="get_touch_sec sec_padding">
+        <div class="container-fluid">
           <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="get_touch_title">
+                <div class="sec_title">
+                  <h2
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="2000"
+                  >
+                    STAY IN
+                    <br />
+                    TOUCH
+                    <br />
+                    WITH US!
+                  </h2>
+                </div>
+              </div>
+            </div>
             <div class="col-lg-4 col-md-10 mx-auto">
               <div
                 class="get_touch_img"
@@ -20,21 +37,6 @@ const GetTouch = () => {
                   class="img-fluid"
                   alt=""
                 />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="get_touch_title">
-                <div class="sec_title">
-                  <h2
-                    data-aos="fade-up"
-                    data-aos-offset="0"
-                    data-aos-duration="2000"
-                  >
-                    TO BE
-                    <br />
-                    DESIGNED!
-                  </h2>
-                </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">

@@ -1,51 +1,58 @@
-import React from 'react'
-import { dmcaImg, facebookIcon, footerBrandImgs, instagramIcon, paymentImg, twitterIcon, youtubeIcon } from '../../../asserts/images'
-import { Link } from 'react-router-dom'
- 
+import React from "react";
+import {
+  dmcaImg,
+  facebookIcon,
+  footerBrandImgs,
+  instagramIcon,
+  paymentImg,
+  twitterIcon,
+  youtubeIcon,
+} from "../../../asserts/images";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
- 
-    const titles = [
-        "PR Publication",
-        "Book Publishing",
-        "Printing Books",
-        "Self-Help Publishing Amazon",
-        "Amazon Printing",
-        "Book Formatting",
-        "Book Review Template",
-        "Children's Book Editing",
-        "Proofreading Editing"
-      ];
- 
-      const ghostServices = [
-        "business books",
-        "Nonfiction",
-        "memoir/autobiography",
-        "fiction",
-        "Western Writing",
-        "Romantic Writing",
-        "Action Adventure",
-        "Christian- Faith",
-        "Drama Writing",
-        "eBook Writing",
-        "Horror Writing",
-        "Hip Hop Ghostwriters",
-        "Article Writing"
-      ];
- 
-      const bookMarketings = [
-        "Book Cover Design",
-        "Audio Book",
-        "Illustrations",
-        "Author Logo Design",
-        "Author E-Commerce Website",
-        "Book Video",
-        "Ebook Social Media Marketing",
-        "EBook SEO"
-      ];
- 
+  const titles = [
+    "PR Publication",
+    "Book Publishing",
+    "Printing Books",
+    "Self-Help Publishing Amazon",
+    "Amazon Printing",
+    "Book Formatting",
+    "Book Review Template",
+    "Children's Book Editing",
+    "Proofreading Editing",
+  ];
+
+  const ghostServices = [
+    "business books",
+    "Nonfiction",
+    "memoir/autobiography",
+    "fiction",
+    "Western Writing",
+    "Romantic Writing",
+    "Action Adventure",
+    "Christian- Faith",
+    "Drama Writing",
+    "eBook Writing",
+    "Horror Writing",
+    "Hip Hop Ghostwriters",
+    "Article Writing",
+  ];
+
+  const bookMarketings = [
+    "Book Cover Design",
+    "Audio Book",
+    "Illustrations",
+    "Author Logo Design",
+    "Author E-Commerce Website",
+    "Book Video",
+    "Ebook Social Media Marketing",
+    "EBook SEO",
+  ];
+
   return (
     <>
-         <section className="footer">
+      <section className="footer">
         <div className="footer_inner_div">
           <div className="container">
             <div className="row justify-content-between">
@@ -54,34 +61,32 @@ const Footer = () => {
                   <div className="col-md-12">
                     <div className="footer_social">
                       <div className="footer_social_item">
-                           
                         <Link>
-                        <img
+                          <img
                             draggable={false}
                             src={instagramIcon}
                             className="footer_social_iconImg"
                             alt=""
                           />
                         </Link>
- 
+
                         <div className="footer_social_text">
                           <p>
                             Followers <br />
                             <b>10K</b>
                           </p>
                         </div>
- 
                       </div>
                       <div className="footer_social_item">
-                            <Link>
-                                <img
-                                    draggable={false}
-                                    src={facebookIcon}
-                                    className="footer_social_iconImg"
-                                    alt=""
-                                />
-                            </Link>
-                     
+                        <Link>
+                          <img
+                            draggable={false}
+                            src={facebookIcon}
+                            className="footer_social_iconImg"
+                            alt=""
+                          />
+                        </Link>
+
                         <div className="footer_social_text">
                           <p>
                             Followers <br />
@@ -90,16 +95,15 @@ const Footer = () => {
                         </div>
                       </div>
                       <div className="footer_social_item">
- 
-                            <Link>
-                                <img
-                                    draggable={false}
-                                    src={youtubeIcon}
-                                    className="footer_social_iconImg"
-                                    alt=""
-                                />
-                            </Link>
- 
+                        <Link>
+                          <img
+                            draggable={false}
+                            src={youtubeIcon}
+                            className="footer_social_iconImg"
+                            alt=""
+                          />
+                        </Link>
+
                         <div className="footer_social_text">
                           <p>
                             Followers <br />
@@ -108,16 +112,15 @@ const Footer = () => {
                         </div>
                       </div>
                       <div className="footer_social_item">
- 
-                            <Link>
-                                <img
-                                    draggable={false}
-                                    src={twitterIcon}
-                                    className="footer_social_iconImg"
-                                    alt=""
-                                />
-                            </Link>
- 
+                        <Link>
+                          <img
+                            draggable={false}
+                            src={twitterIcon}
+                            className="footer_social_iconImg"
+                            alt=""
+                          />
+                        </Link>
+
                         <div className="footer_social_text">
                           <p>
                             Followers <br />
@@ -134,11 +137,10 @@ const Footer = () => {
                         Ghostwriting <br />
                         Services
                       </h3>
- 
+
                       <ul className="footer_links">
- 
                         <li className="footer_link">
-                            <Link>business books</Link>
+                          <Link>business books</Link>
                         </li>
                         <li className="footer_link">
                           <Link>Nonfiction</Link>
@@ -147,44 +149,37 @@ const Footer = () => {
                           <Link>memoir/autobiography</Link>
                         </li>
                         <li className="footer_link">
-                            <Link>fiction</Link>
+                          <Link>fiction</Link>
                         </li>
                         <li className="footer_link">
-                            <Link>Western Writing</Link>
+                          <Link>Western Writing</Link>
                         </li>
                         <li className="footer_link">
-                            <Link>Romantic Writing</Link>
+                          <Link>Romantic Writing</Link>
                         </li>
                         <li className="footer_link">
-                            <Link>Action Adventure</Link>
-                         
+                          <Link>Action Adventure</Link>
                         </li>
                         <li className="footer_link">
-                        <Link to="faithfaith-writer">Christian- Faith</Link>
-                         
+                          <Link to="faithfaith-writer">Christian- Faith</Link>
                         </li>
                         <li className="footer_link">
-                            <Link>Drama Writing</Link>
-                         
+                          <Link>Drama Writing</Link>
                         </li>
                         <li className="footer_link">
-                            <Link>eBook Writing</Link>
-                         
+                          <Link>eBook Writing</Link>
                         </li>
                         <li className="footer_link">
-                            <Link>Horror Writing</Link>
-                       
+                          <Link>Horror Writing</Link>
                         </li>
                         <li className="footer_link">
-                            <Link>Hip Hop Ghostwriters</Link>
-                       
+                          <Link>Hip Hop Ghostwriters</Link>
                         </li>
                         <li className="footer_link">
-                            <Link>Article Writing</Link>
-                       
+                          <Link>Article Writing</Link>
                         </li>
                       </ul>
- 
+
                       <ul className="footer_links">
                         {/* {
                             ghostServices.map((ghostservice, index) => (
@@ -194,7 +189,6 @@ const Footer = () => {
                             ))
                         } */}
                       </ul>
- 
                     </div>
                   </div>
                   <div className="col-md-4">
@@ -202,7 +196,7 @@ const Footer = () => {
                       <h3 className="footer_subhead">
                         Publishing & <br /> Editing
                       </h3>
- 
+
                       <ul className="footer_links">
                         <li className="footer_link">
                           <Link to="/">PR Publication</Link>
@@ -226,13 +220,15 @@ const Footer = () => {
                           <Link to="/">Book Review Template</Link>
                         </li>
                         <li className="footer_link">
-                          <Link to="/children-illustration">Children's Book Editing</Link>
+                          <Link to="/children-illustration">
+                            Children's Book Editing
+                          </Link>
                         </li>
                         <li className="footer_link">
                           <Link to="/">Proofreading Editing</Link>
                         </li>
                       </ul>
- 
+
                       {/* <ul className="footer_links">
                         {titles.map((title, index) => (
                             <li key={index} className="footer_link">
@@ -240,8 +236,6 @@ const Footer = () => {
                             </li>
                         ))}
                         </ul> */}
- 
- 
                     </div>
                   </div>
                   <div className="col-md-4">
@@ -250,7 +244,7 @@ const Footer = () => {
                         Book Marketing and
                         <br /> Production
                       </h3>
- 
+
                       <ul className="footer_links">
                         <li className="footer_link">
                           <Link to="/cover-design">Book Cover Design</Link>
@@ -265,7 +259,9 @@ const Footer = () => {
                           <Link to="/">Author Logo Design</Link>
                         </li>
                         <li className="footer_link">
-                          <Link to="/website-author">Author E-Commerce Website</Link>
+                          <Link to="/website-author">
+                            Author E-Commerce Website
+                          </Link>
                         </li>
                         <li className="footer_link">
                           <Link to="/">Book Video</Link>
@@ -277,7 +273,7 @@ const Footer = () => {
                           <Link to="/">EBook SEO</Link>
                         </li>
                       </ul>
- 
+
                       {/* <ul className="footer_links">
                         {
                             bookMarketings.map((bookmarketing, index) => (
@@ -287,8 +283,6 @@ const Footer = () => {
                             ))
                         }
                       </ul> */}
- 
- 
                     </div>
                   </div>
                 </div>
@@ -317,13 +311,13 @@ const Footer = () => {
                 <div className="footer_extra_links">
                   <ul className="footer_links">
                     <li className="footer_link">
-                        <Link>About</Link>
+                      <Link>About</Link>
                     </li>
                     <li className="footer_link">
-                        <Link>Review</Link>
+                      <Link>Review</Link>
                     </li>
                     <li className="footer_link">
-                        <Link>Contact us</Link>
+                      <Link>Contact us</Link>
                     </li>
                   </ul>
                 </div>
@@ -349,10 +343,10 @@ const Footer = () => {
                 <div className="footer_termCondition_links">
                   <ul className="footer_links">
                     <li className="footer_link">
-                        <Link>Privacy Policy</Link>
+                      <Link>Privacy Policy</Link>
                     </li>
                     <li className="footer_link">
-                        <Link>Terms of Service</Link>
+                      <Link>Terms of Service</Link>
                     </li>
                   </ul>
                 </div>
@@ -362,7 +356,7 @@ const Footer = () => {
         </div>
       </section>
     </>
-  )
-}
- 
-export default Footer
+  );
+};
+
+export default Footer;

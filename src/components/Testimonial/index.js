@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import Modal from "react-bootstrap/Modal";
+import { ModalDialog } from "react-bootstrap";
 import {
   polygon01,
   processFeather,
-  ratingStars,
-  testimonialGroupImg,
-  testimonialQuote,
-  userImg01,
   testImg1,
   testImg2,
   testImg3,
@@ -14,6 +12,7 @@ import {
   testImg6,
   testImg7,
   testImg8,
+  testVideo1,
 } from "../../asserts/images";
 import "./style.css";
 
@@ -22,7 +21,44 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 gsap.registerPlugin(MotionPathPlugin);
 
+const testimonials_data = [
+  {
+    id: 1,
+    image: testImg1,
+  },
+  {
+    id: 2,
+    image: testImg2,
+  },
+  {
+    id: 3,
+    image: testImg3,
+  },
+  {
+    id: 4,
+    image: testImg4,
+  },
+  {
+    id: 5,
+    image: testImg5,
+  },
+  {
+    id: 6,
+    image: testImg6,
+  },
+  {
+    id: 7,
+    image: testImg7,
+  },
+  {
+    id: 8,
+    image: testImg8,
+  },
+];
+
 const Testimonial = () => {
+  const [lgShow, setLgShow] = useState(false);
+
   useEffect(() => {
     const boxes = document.querySelectorAll(".box");
     const path = document.querySelector("#circularPath");
@@ -35,7 +71,8 @@ const Testimonial = () => {
         motionPath: {
           path: path,
           align: path,
-          alignOrigin: [2.9, 0.5],
+          // alignOrigin: [2.9, 0.5],
+          alignOrigin: [3, 0.5],
           start: index / totalBoxes,
           end: (index + 1) / totalBoxes,
           immediateRender: true,
@@ -43,7 +80,7 @@ const Testimonial = () => {
         duration: duration,
         repeat: -1, // Repeat infinitely
         ease: "linear",
-        yoyo: false,
+        yoyo: true,
       });
     });
   }, []); // Empty dependency array means this effect runs once on mount
@@ -73,7 +110,7 @@ const Testimonial = () => {
                 data-aos-offset="0"
                 data-aos-duration="1000"
               >
-                <div className="circle">
+                <div className="test_circle">
                   <svg width="100%" height="100%" viewBox="0 0 500 500">
                     <path
                       id="circularPath"
@@ -83,38 +120,73 @@ const Testimonial = () => {
                     />
                   </svg>
 
-                  <div
+                  {testimonials_data.map((item, index) => (
+                    <button
+                      type="button"
+                      className="box"
+                      key={index}
+                      onClick={() => setLgShow(true)}
+                    >
+                      <img src={item.image} alt="" />
+                    </button>
+                  ))}
+
+                  {/* <button
+                    type="button"
                     className="box"
-                    style={{ backgroundImage: `url(${testImg1})` }}
-                  ></div>
-                  <div
+                    // style={{ backgroundImage: `url(${testImg1})` }}
+                  >
+                    <img src={testImg1} alt="" />
+                  </button>
+                  <button
+                    type="button"
                     className="box"
-                    style={{ backgroundImage: `url(${testImg2})` }}
-                  ></div>
-                  <div
+                    // style={{ backgroundImage: `url(${testImg2})` }}
+                  >
+                    <img src={testImg2} alt="" />
+                  </button>
+                  <button
+                    type="button"
                     className="box"
-                    style={{ backgroundImage: `url(${testImg3})` }}
-                  ></div>
-                  <div
+                    // style={{ backgroundImage: `url(${testImg3})` }}
+                  >
+                    <img src={testImg3} alt="" />
+                  </button>
+                  <button
+                    type="button"
                     className="box"
-                    style={{ backgroundImage: `url(${testImg4})` }}
-                  ></div>
-                  <div
+                    // style={{ backgroundImage: `url(${testImg4})` }}
+                  >
+                    <img src={testImg4} alt="" />
+                  </button>
+                  <button
+                    type="button"
                     className="box"
-                    style={{ backgroundImage: `url(${testImg5})` }}
-                  ></div>
-                  <div
+                    // style={{ backgroundImage: `url(${testImg5})` }}
+                  >
+                    <img src={testImg5} alt="" />
+                  </button>
+                  <button
+                    type="button"
                     className="box"
-                    style={{ backgroundImage: `url(${testImg6})` }}
-                  ></div>
-                  <div
+                    // style={{ backgroundImage: `url(${testImg6})` }}
+                  >
+                    <img src={testImg6} alt="" />
+                  </button>
+                  <button
+                    type="button"
                     className="box"
-                    style={{ backgroundImage: `url(${testImg7})` }}
-                  ></div>
-                  <div
+                    // style={{ backgroundImage: `url(${testImg7})` }}
+                  >
+                    <img src={testImg7} alt="" />
+                  </button>
+                  <button
+                    type="button"
                     className="box"
-                    style={{ backgroundImage: `url(${testImg8})` }}
-                  ></div>
+                    // style={{ backgroundImage: `url(${testImg8})` }}
+                  >
+                    <img src={testImg8} alt="" />
+                  </button> */}
                 </div>
                 {/* <img
                   draggable={false}
@@ -141,6 +213,7 @@ const Testimonial = () => {
                     </div> */}
               </div>
             </div>
+
             {/* <div className="col-lg-6 col-sm-10 mx-auto">
               <div className="testimonial_tabs_content" data-aos="fade-left"
                 data-aos-offset="0"
@@ -175,6 +248,29 @@ const Testimonial = () => {
           </div>
         </div>
       </section>
+      <Modal
+        size="lg"
+        show={lgShow}
+        centered
+        onHide={() => setLgShow(false)}
+        // aria-labelledby="example-modal-sizes-title-lg"
+        className="testimonial_modal"
+      >
+        <Modal.Body>
+          <button
+            className="modalCloseBtn"
+            onClick={() => setLgShow(false)}
+            aria-label="Close"
+          >
+            X
+          </button>
+          <video autoPlay loop width="100%">
+            <source src={testVideo1} type="video/mp4" />{" "}
+            {/* Replace with your video path */}
+            Your browser does not support the video tag.
+          </video>
+        </Modal.Body>
+      </Modal>
     </>
   );
 };
