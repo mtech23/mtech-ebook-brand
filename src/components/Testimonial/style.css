@@ -253,3 +253,10 @@
   background-repeat: no-repeat;
   background-position: 17% 51%;
 }
+img.test_playIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+}

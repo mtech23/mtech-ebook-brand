@@ -13,6 +13,7 @@ import {
   testImg7,
   testImg8,
   testVideo1,
+  testPlayIcon,
 } from "../../asserts/images";
 import "./style.css";
 
@@ -25,54 +26,100 @@ const testimonials_data = [
   {
     id: 1,
     image: testImg1,
+    Icon: testPlayIcon,
   },
   {
     id: 2,
     image: testImg2,
+
+    Icon: testPlayIcon,
   },
   {
     id: 3,
     image: testImg3,
+
+    Icon: testPlayIcon,
   },
   {
     id: 4,
     image: testImg4,
+
+    Icon: testPlayIcon,
   },
   {
     id: 5,
     image: testImg5,
+
+    Icon: testPlayIcon,
   },
   {
     id: 6,
     image: testImg6,
+
+    Icon: testPlayIcon,
   },
   {
     id: 7,
     image: testImg7,
+
+    Icon: testPlayIcon,
   },
   {
     id: 8,
     image: testImg8,
+
+    Icon: testPlayIcon,
   },
 ];
 
 const Testimonial = () => {
   const [lgShow, setLgShow] = useState(false);
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    // Function to handle window resize
+    const handleResize = () => setWindowWidth(window.innerWidth);
+
+    // Attach resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     const boxes = document.querySelectorAll(".box");
     const path = document.querySelector("#circularPath");
 
+    // Define responsive settings
+    let duration, alignOrigin;
+
+    if (windowWidth < 768) {
+      // Mobile settings
+      duration = 3;
+      alignOrigin = [3, 0.5];
+    } else if (windowWidth < 1024) {
+      // Tablet settings
+      duration = 4;
+      alignOrigin = [2.8, 0.5];
+    } else {
+      // Desktop settings
+      duration = 5;
+      alignOrigin = [3, 0.5];
+    }
+
     boxes.forEach((box, index) => {
       const totalBoxes = boxes.length;
-      const duration = 5;
+      // const duration = 5;
 
       gsap.to(box, {
         motionPath: {
           path: path,
           align: path,
           // alignOrigin: [2.9, 0.5],
-          alignOrigin: [3, 0.5],
+          // alignOrigin: [3, 0.5],
+          alignOrigin: alignOrigin,
           start: index / totalBoxes,
           end: (index + 1) / totalBoxes,
           immediateRender: true,
@@ -83,7 +130,7 @@ const Testimonial = () => {
         yoyo: true,
       });
     });
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, []);
   return (
     <>
       <section className="testimonial">
@@ -128,6 +175,11 @@ const Testimonial = () => {
                       onClick={() => setLgShow(true)}
                     >
                       <img src={item.image} alt="" />
+                      <img
+                        src={testPlayIcon}
+                        className="test_playIcon"
+                        alt=""
+                      />
                     </button>
                   ))}
 

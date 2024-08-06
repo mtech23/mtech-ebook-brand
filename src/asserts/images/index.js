@@ -89,6 +89,8 @@ import testImg8 from "./test-img8.png";
 
 import testVideo1 from "./testimonial-video1.mp4";
 
+import testPlayIcon from "./test_play-icon.png";
+
 export {
   logo,
   chatIcon,
@@ -176,4 +178,5 @@ export {
   testImg7,
   testImg8,
   testVideo1,
+  testPlayIcon,
 };
